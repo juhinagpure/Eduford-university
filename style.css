@@ -200,10 +200,15 @@ h3{
     width: 100%;
 }
 .layer{
-   background: rgba(226,0,0,0.7); 
+   background: transparent; 
    height: 100%;
    width: 100%;
    position: absolute;
    top: 0;
    left: 0;
+   transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7); 
+
 }
