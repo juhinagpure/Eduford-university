@@ -81,3 +81,8 @@ font-size: 62px;
     position: relative;
     cursor: pointer;
 }
+.hero-btn:hover{
+   border: 1px solid #f44336;
+   background: #f44336;
+   transition: 1s; 
+}
