@@ -41,7 +41,8 @@ nav img {
     text-decoration: none;
     font-size: 13px;
 }
-.nav-links ul li::after{
+
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -50,27 +51,32 @@ nav img {
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li:hover::after{
+
+.nav-links ul li:hover::after {
     width: 100%;
 }
-.text-box{
+
+.text-box {
     width: 90%;
     color: white;
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-.text-box h1{
-font-size: 62px;
+
+.text-box h1 {
+    font-size: 62px;
 }
-.text-box p{
-    margin:10px 0 40px;
+
+.text-box p {
+    margin: 10px 0 40px;
     font-size: 14px;
     color: white;
 }
-.hero-btn{
+
+.hero-btn {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -81,41 +87,67 @@ font-size: 62px;
     position: relative;
     cursor: pointer;
 }
-.hero-btn:hover{
-   border: 1px solid #f44336;
-   background: #f44336;
-   transition: 1s; 
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
 }
-nav .fa{
+
+nav .fa {
     display: none;
 }
 
-@media(max-width:700px){
-    .text-box h1{
+
+@media(max-width:700px) {
+    .text-box h1 {
         font-size: 20px;
-        } 
-        .nav-links ul li{
-            display: block;
-        }
-        .nav-links {
-            position: absolute;
-            background: #f44336;
-            height: 100vh;
-            width: 200px;
-            top: 0;
-            right:-200px;
-            text-align: left;
-            z-index: 2;
-            transition: 1s;
-        }
-        nav .fa{
-            display: block;
-            color: #fff;
-            margin: 10px;
-            font-size: 22px;
-            cursor: pointer;
-         }
-         .nav-links ul{
-           padding: 30px;
-         }
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/* course */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+  font-size: 36px;
+  font-weight: 600;  
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
 }
