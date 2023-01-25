@@ -189,3 +189,21 @@ h3{
     text-align: center;
     padding-top: 50px;
 }
+.campus-col{
+   flex-basis: 32%;
+   border-radius: 10px;
+   margin: 30px;
+   position: relative;
+   overflow: hidden; 
+}
+.campus-col img{
+    width: 100%;
+}
+.layer{
+   background: rgba(226,0,0,0.7); 
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
