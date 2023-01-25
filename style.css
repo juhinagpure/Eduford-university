@@ -181,3 +181,11 @@ h3{
         flex-direction: column;
     }
 }
+
+/* campus */
+.campus{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+}
