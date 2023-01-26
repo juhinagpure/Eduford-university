@@ -304,7 +304,7 @@ color:#f44336;
 .cta{
     margin:100px auto;
     width: 80%;
-    background-image:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)),url(/eduford_img/banner2.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)),url('/eduford_img/banner2.jpg');
     background-position:center;
     background-size: cover;
     border-radius: 10px;
@@ -312,7 +312,7 @@ color:#f44336;
     padding: 100px 0;
 }
 
-.cat h1{
+.cta h1{
     color: #fff;
     margin-bottom: 40px;
     padding: 0;
