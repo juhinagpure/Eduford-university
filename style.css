@@ -290,7 +290,7 @@ testimonials-col p{
     margin-top: 15px;
     text-align: left;
 }
-.testimonials-col fa{
+.testimonials-col .fa{
 color:#f44336;
 }
 @media(max-width:700px){
@@ -322,4 +322,27 @@ color:#f44336;
     .cta h1{
         font-size: 24px;
     }
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+color: #f44336;
+margin: 0 13px;
+cursor: pointer;
+padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: #f44336;
 }
