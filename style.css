@@ -293,7 +293,7 @@ testimonials-col p{
 .testimonials-col fa{
 color:#f44336;
 }
-@media(max-width:700px){
+@media(max-width:800px){
     .testimonials-col img{
         margin-left: 0px;
         margin-right: 15px;
