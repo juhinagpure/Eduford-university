@@ -283,3 +283,13 @@ border-radius: 10px;
     margin-right: 30px;
     border-radius: 50px;
 }
+testimonials-col p{
+    padding: 0;
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonials-col fa{
+color:#f44336;
+}
