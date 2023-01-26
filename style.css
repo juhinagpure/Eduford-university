@@ -346,3 +346,17 @@ padding: 18px 0;
 .fa-heart-o{
     color: #f44336;
 }
+
+/* About us page */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('/eduford_img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
