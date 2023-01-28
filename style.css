@@ -414,13 +414,12 @@ color: #f44336;
 
 /* blog-content */
 .blog-content{
-    width: 80%; 
+    width: 80%;
     margin: auto;
     padding: 60px 0;
 }
 .blog-left{
-    flex-basis: 65%;  
-
+   flex-basis: 65%; 
 }
 .blog-left img{
     width: 100%;
