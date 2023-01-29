@@ -510,3 +510,10 @@ margin-bottom: 5px;
 color: #555;
 font-weight: 400;
 }
+.contact-col input , .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc ;
+}
