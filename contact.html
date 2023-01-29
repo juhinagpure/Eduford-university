@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">COURSE</a></li>
+                    <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -65,11 +65,11 @@
             </div>
 
             <div class="contact-col">
-                <form action="">
-                    <input type="text" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter email address" required>
-                    <input type="text" placeholder="Enter Your Subject" required>
-                    <textarea rows="8" placeholder="message" required></textarea>
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="message" required></textarea>
                     <button type="submit" class="hero-btn red-btn">Send Message</button>
                 </form>
             </div>
