@@ -37,7 +37,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
@@ -58,7 +58,7 @@ nav img {
 
 .text-box {
     width: 90%;
-    color: white;
+    color:#fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -73,7 +73,7 @@ nav img {
 .text-box p {
     margin: 10px 0 40px;
     font-size: 14px;
-    color: white;
+    color: #fff;
 }
 
 .hero-btn {
@@ -94,7 +94,11 @@ nav img {
     transition: 1s;
 }
 
-nav .fa {
+nav .fa-bars {
+    display: none;
+}
+
+nav .fa-xmark{
     display: none;
 }
 
@@ -104,7 +108,7 @@ nav .fa {
         font-size: 20px;
     }
 
-    .nav-links ul li {
+    .nav-links ul li{
         display: block;
     }
 
@@ -354,7 +358,7 @@ h3 {
     font-weight: 600;
 }
 
-.icons .fa {
+.icons .fa-solid fa-star {
     color: #f44336;
     margin: 0 13px;
     cursor: pointer;

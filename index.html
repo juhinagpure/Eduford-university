@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>EDUFORD UNIVERSITY WEBSITE</title>
 </head>
 
@@ -20,7 +21,7 @@
     <section class="header">
         <nav><a href="index.html"><img src="/eduford_img/logo.png" alt=""></a>
             <div class="nav-links id=" navLinks">
-                <i class="fa fa-time" onclick="hideMenu()"></i>
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -28,11 +29,13 @@
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-            </div><i class="fa fa-bars" onclick="showMenu()"></i>
+            </div><i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
-            <p></p><a href="" class="hero-btn">Visit Us To Know More</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae ullam qui,<br> labore
+                recusandae, culpa facilis expedita maxime consequuntur iure veritatis ipsa, ut vel?</p><a href=""
+                class="hero-btn">Visit Us To Know More</a>
         </div>
     </section>
     <!-- Course  -->
@@ -136,9 +139,9 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore unde, accusantium, sint
                         voluptate omnis non nostrum possimus voluptatem minima, dolorum aliquam.</p>
                     <h3>David Byer</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
@@ -159,12 +162,12 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem harum architecto nulla <br>distinctio
             deserunt temporibus ex perferendis molestias iure! Sequi, error.</p>
         <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-Linekdin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
         </div>
-        <p>made with <i class="fa fa-heart-o"></i> By Juhi
+        <p>made with <i class="fa-regular fa-heart"></i> By Juhi
         </p>
     </section>
 
@@ -177,7 +180,7 @@
             navLinks.style.right = "0";
         }
 
-        function showMenu() {
+        function hideMenu() {
             navLinks.style.right = "-200px";
         }
     </script>
