@@ -313,6 +313,10 @@ h3 {
 .testimonials-col .fa {
     color: #f44336;
 }
+.testimonials-col .fa-solid{
+    color: #f44336;
+}
+
 
 @media(max-width:700px) {
     .testimonials-col img {
