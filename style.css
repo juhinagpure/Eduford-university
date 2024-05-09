@@ -368,6 +368,9 @@ h3 {
     cursor: pointer;
     padding: 18px 0;
 }
+.icons a i {
+    color: black;
+  }
 
 .fa-heart-o {
     color: #f44336;
