@@ -553,3 +553,8 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.icons :hover{
+    
+transform: scale(1.2);
+
+}
