@@ -25,38 +25,38 @@ Eduford University Website is a project developed as part of the GirlScript Summ
 
 # Contribution Guidelines
 
-Thank you for considering contributing to PETARI! We appreciate your efforts to make a positive impact on society through food redistribution and combating hunger. By contributing to PETARI, you are helping us move closer to our goal of creating a hunger-free world and reducing food waste.
+Thank you for considering contributing to Eduford-University! We appreciate your efforts to make a positive impact on society through food redistribution and combating hunger. By contributing to Eduford-University, you are helping us move closer to our goal of creating a hunger-free world and reducing food waste.
 
 ## How Can You Contribute?
 
-There are several ways you can contribute to PETARI:
+There are several ways you can contribute to Eduford-University:
 
-1. **Code Contributions**: Help improve the PETARI codebase by fixing bugs, adding new features, or enhancing existing functionalities.
+1. **Code Contributions**: Help improve the Eduford-University codebase by fixing bugs, adding new features, or enhancing existing functionalities.
 
 2. **Documentation**: Improve the project's documentation to make it more comprehensive and user-friendly.
 
 3. **Testing**: Test the application and report any bugs or issues you encounter. You can also contribute by writing and running test cases.
 
-4. **Design**: If you have design skills, you can contribute by creating or improving the user interface and experience of PETARI.
+4. **Design**: If you have design skills, you can contribute by creating or improving the user interface and experience of Eduford-University.
 
-5. **Feedback**: Provide feedback on the existing features, suggest new ideas, or share your thoughts on how PETARI can be further improved.
+5. **Feedback**: Provide feedback on the existing features, suggest new ideas, or share your thoughts on how Eduford-University can be further improved.
 
 ## Getting Started
 
 If you're new to contributing to open-source projects, don't worry! Here's how you can get started:
 
-1. **Fork the Repository**: Fork the PETARI repository to your GitHub account.
+1. **Fork the Repository**: Fork the Eduford-University repository to your GitHub account.
 
 2. **Clone the Repository**: Clone the forked repository to your local machine using Git.
 
     ```
-    git clone https://github.com/your-username/Petari.git
+    git clone https://github.com/your-username/Eduford-University.git
     ```
 
 3. **Open project**: Open the project directory.
 
     ```
-    cd Petari
+    cd Eduford-University
     ```
 4. **Create a new branch**: To create a new branch for your profile, run the following command:
 
@@ -86,7 +86,7 @@ If you're new to contributing to open-source projects, don't worry! Here's how y
     git push
     ```
 
-10. **Create a Pull Request**: Open a pull request from your forked repository to the main PETARI repository. Provide a clear description of your changes in the pull request. Follow these steps
+10. **Create a Pull Request**: Open a pull request from your forked repository to the main Eduford-University repository. Provide a clear description of your changes in the pull request. Follow these steps
     - Add the issue number, that you have been assigned[Formate:- Isuue number #(your issue number)]
     - Brief description of the changes
 
@@ -100,8 +100,8 @@ To maintain consistency and readability, please follow these code style guidelin
 
 ## Code Review Process
 
-All contributions to PETARI will go through a code review process to ensure code quality, consistency, and adherence to project standards. Your contributions are valuable, and we appreciate your patience during the review process.
+All contributions to Eduford-University will go through a code review process to ensure code quality, consistency, and adherence to project standards. Your contributions are valuable, and we appreciate your patience during the review process.
 
 ## Community Guidelines
 
-PETARI is committed to fostering an inclusive and welcoming community. We encourage respectful and constructive communication among contributors. Please refer to our [Code of Conduct](README.md) for more information.
+Eduford-University is committed to fostering an inclusive and welcoming community. We encourage respectful and constructive communication among contributors. Please refer to our [Code of Conduct](README.md) for more information.
