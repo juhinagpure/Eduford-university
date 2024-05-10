@@ -86,12 +86,16 @@ nav img {
     background: transparent;
     position: relative;
     cursor: pointer;
+   
 }
+
 
 .hero-btn:hover {
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
+    border-radius: 10px;
+    border-color: red;
 }
 
 nav .fa-bars {
@@ -329,6 +333,7 @@ h3 {
 .cta {
     margin: 100px auto;
     width: 80%;
+    margin-top:-18px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./eduford_img/banner2.jpg);
     background-position: center;
     background-size: cover;
@@ -354,6 +359,7 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    margin-top:-10px;
 }
 
 .footer h1 {
@@ -393,6 +399,7 @@ h3 {
     margin: auto;
     padding-top: 80px;
     padding-bottom: 50px;
+    margin-top:-10px;
 }
 
 .about-col {
@@ -549,4 +556,15 @@ h3 {
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+
+.icons a {
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover {
+    transform: scale(1.2);
 }
