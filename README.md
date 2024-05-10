@@ -1,3 +1,4 @@
+![GirlScript Summer of Code](/eduford_img/GSSoC.png)
 # Eduford University Website
 
 Welcome to the Eduford University Website project! This project is part of the GirlScript Summer of Code program. It aims to create a modern and user-friendly website for Eduford University.
