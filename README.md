@@ -82,7 +82,7 @@ If you're new to contributing to open-source projects, don't worry! Here's how y
 9. **Push Changes**: Push your changes to your forked repository.
 
     ```
-    git push origin add-profile
+    git push
     ```
 
 10. **Create a Pull Request**: Open a pull request from your forked repository to the main PETARI repository. Provide a clear description of your changes in the pull request. Follow these steps
