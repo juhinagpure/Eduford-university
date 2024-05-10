@@ -89,9 +89,17 @@ nav img {
 }
 
 .hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
-    transition: 1s;
+    padding: 0.5em 1em;
+    background-color: #e13606;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    color: #c4f0c0;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(130, 189, 35, 0.938), 0 2px 4px -2px rgba(220, 200, 84, 0.1);
 }
 
 nav .fa-bars {
