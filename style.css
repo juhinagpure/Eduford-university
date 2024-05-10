@@ -58,7 +58,7 @@ nav img {
 
 .text-box {
     width: 90%;
-    color:#fff;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -98,7 +98,7 @@ nav .fa-bars {
     display: none;
 }
 
-nav .fa-xmark{
+nav .fa-xmark {
     display: none;
 }
 
@@ -108,7 +108,7 @@ nav .fa-xmark{
         font-size: 20px;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
 
@@ -253,25 +253,71 @@ h3 {
 }
 
 .facilities-col {
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
+    flex: 1 1 300px;
+    background-color: transparent;
+    margin: 30px;
+    height: 300px;
+    perspective: 1000px;
 }
 
-.facilities-col img {
+.facilities-col-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.facilities-col:hover .facilities-col-inner {
+    transform: rotateY(180deg);
+}
+
+.facilities-col-front,
+.facilities-col-back {
+    position: absolute;
     width: 100%;
     border-radius: 10px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-.facilities-col p {
-    padding: 0;
+.facilities-col-front img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
 }
 
-.facilities-col h3 {
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: left;
+.facilities-col-back {
+    background-color:#f44336;
+    color:#f0f0f0;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.facilities-col-back p,
+.facilities-col-back h3 {
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.facilities-col:hover .facilities-col-back p,
+.facilities-col:hover .facilities-col-back h3{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.facilities-col-back p {
+    color: #fff3f3;
 }
 
 /* testimonials */
@@ -313,8 +359,9 @@ h3 {
 .testimonials-col .fa {
     color: #f44336;
 }
-.testimonials-col .fa-solid{
-    color: #f44336; 
+
+.testimonials-col .fa-solid {
+    color: #f44336;
 }
 
 
