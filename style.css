@@ -56,6 +56,10 @@ nav img {
     width: 100%;
 }
 
+.nav-links ul li:clicked {
+    text-decoration: underline;
+}
+
 .text-box {
     width: 90%;
     color:#fff;
