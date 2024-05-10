@@ -35,11 +35,19 @@ Stay connected with the vibrant campus life and student experiences through our 
 - **Campus Events Coverage**: Highlights of events, seminars, workshops, and cultural activities organized at Eduford University.
 - **Facilities Showcase**: In-depth features showcasing the university's facilities and amenities, including the library, sports complex, accommodation, and more.
 
+### Tech Stack
+
+Our website is built using the following technologies:
+
+- **HTML**: Structure and content of web pages.
+- **CSS**: Styling and layout of web pages.
+- **JavaScript**: Adding interactivity and dynamic features.
+- **Bootstrap**: Front-end framework for responsive design.
+- **jQuery**: JavaScript library for simplified DOM manipulation.
+
 ## Getting Started
 
 To explore our website, simply clone this repository and open the `index.html` file in your web browser.
 
 ```bash
 git clone https://github.com/yourusername/eduford-university.git
-
-We welcome contributions from the community to improve and enhance our website. If you have suggestions for new features, bug fixes, or any other improvements, please feel free to fork this repository and submit a pull request.
