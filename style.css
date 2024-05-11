@@ -253,7 +253,7 @@ h3 {
 .facilities {
     width: 80%;
     margin: auto;
-    text-align: center;
+    text-align:l;
     padding-top: 100px;
 }
 
@@ -270,13 +270,15 @@ h3 {
 }
 
 .facilities-col p {
-    padding: 0;
+    padding-left: 10px;
+    text-align: left;
 }
 
 .facilities-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+    padding-left: 10px;
 }
 
 /* testimonials */
