@@ -19,9 +19,10 @@
 
 <body>
     <section class="sub-header">
-        <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links id=" navLinks">
-                <i class="fa fa-time" onclick="hideMenu()"></i>
+        <nav>
+            <a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -29,7 +30,8 @@
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-            </div><i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <h1>About Us</h1>
     </section>
@@ -49,23 +51,21 @@
 
     </section>
 
-
     <!-- Footer -->
     <section class="footer">
         <h4>About Us</h4>
         <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
             diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
         <div class="icons">
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-facebook"></i></a> 
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-twitter"></i></a> 
-        <a style="padding: 10px;" href=""><i class="fa-brands fa-instagram"></i></a>  
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a> 
+            <a href="#" style="padding: 10px;"><i class="fab fa-facebook"></i></a>
+            <a href="#" style="padding: 10px;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="padding: 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="padding: 10px;"><i class="fab fa-linkedin"></i></a>
         </div>
-        <p>made with <i class="fa-regular fa-heart"></i> By Juhi
-        </p>
+        <p>made with <i class="far fa-heart"></i> By Juhi</p>
     </section>
 
-    <!-- javascript for toggle menu -->
+    <!-- JavaScript for toggle menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
 
@@ -73,7 +73,7 @@
             navLinks.style.right = "0";
         }
 
-        function showMenu() {
+        function hideMenu() {
             navLinks.style.right = "-200px";
         }
     </script>
