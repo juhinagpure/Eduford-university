@@ -182,6 +182,9 @@ h3 {
 
 .course-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Scales the element size up to 105% */
+    transition: transform 0.8s ease-in-out; /* Smooth transition for transform */
+    color: #f44336;
 }
 
 @media(max-width: 700px) {
@@ -252,6 +255,12 @@ h3 {
     padding-top: 100px;
 }
 
+.facilities-col:hover {
+    transform: scale(1.05); /* Scales the element size up to 105% */
+    transition: transform 0.8s ease-in-out; /* Smooth transition for transform */
+}
+
+
 .facilities-col {
     flex-basis: 31%;
     border-radius: 10px;
@@ -292,6 +301,12 @@ h3 {
     cursor: pointer;
     display: flex;
     box-sizing: border-box;
+}
+
+.testimonials-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Scales the element size up to 105% */
+    transition: transform 0.8s ease-in-out; /* Smooth transition for transform */
 }
 
 .testimonials-col img {
