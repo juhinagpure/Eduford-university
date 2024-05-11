@@ -550,3 +550,104 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+.h-heading {
+    text-align: center;  /* Center the text horizontally */
+  }
+  
+  .placement-company {
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .placement-company .comp {
+    margin: 0 10px 10px 0; 
+    display: inline-block;
+  }
+  
+  .p-com-logo img {
+    width: auto;  
+    height: 100px;
+    width: 100px;
+    gap :10vh  ;
+  }
+
+  .section {
+    display: flex;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+  .placement-heading {
+    text-align: center;
+  }
+  
+  .placement-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .placement-company .comp {
+    margin: 0 10px 10px 0;
+    display: inline-block;
+  }
+  
+  .p-com-logo img {
+    width: auto;
+    height: 12vh; /* Adjust image height as needed */
+  }
+
+.researchinnovation{
+    margin-top: 4vh;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}  
+.research{
+    margin: 0vh 3vh;
+    padding: 1vh;
+    display: flex;
+    overflow: scroll;
+    
+    scrollbar-width: none;
+}
+.research-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 1vh;
+}
+
+
+.r-card {
+    position: relative;
+    transition: transform 1s; 
+}
+
+/* 3D effect on hover */
+.r-card:hover {
+    animation: effect3d 2s  .2s infinite ;
+}
+@keyframes effect3d {
+    0%{
+        transform: perspective(1000px) rotateY(10deg);
+    }
+    50%{
+        transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+    }
+    75%{
+        transform: perspective(1000px) rotateY(-10deg) rotateX(10deg);
+    }
+    90%{
+        transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(10deg);
+    }
+}
+
+.r-card img {
+    width: 250px;
+    height: 150px; 
+    border-radius: 8px; /* Add border radius if needed */
+}
