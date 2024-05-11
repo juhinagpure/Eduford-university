@@ -373,6 +373,9 @@ h3 {
     cursor: pointer;
     padding: 18px 0;
 }
+.icons a i {
+    color: black;
+  }
 
 .fa-heart-o {
     color: #f44336;
@@ -554,4 +557,10 @@ h3 {
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.icons :hover{
+    
+transform: scale(1.2);
+
 }
