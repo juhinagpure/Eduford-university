@@ -89,11 +89,16 @@ nav img {
 }
 
 .hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
     transition: 1s;
 }
+.hero-btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
 
+.hero-btn:active {
+  transform: scale(0.9);
+}
 nav .fa-bars {
     display: none;
 }
@@ -550,6 +555,7 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
 
 .h-heading {
     text-align: center;  /* Center the text horizontally */
