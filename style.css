@@ -270,13 +270,14 @@ h3 {
 }
 
 .facilities-col p {
-    padding: 0;
+    padding: 5px;
 }
 
 .facilities-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
+    padding: 10px;
 }
 
 /* testimonials */

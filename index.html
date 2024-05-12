@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
         rel="stylesheet">
@@ -24,7 +25,7 @@
             <div class="nav-links" id=" navLinks">
                 <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li class="active-nav"><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
@@ -149,7 +150,7 @@
     <!-- call the action -->
     <section class="cta">
         <h1>Enroll for Our Various Online Courses <br>Anywhere From The World</h1>
-        <a href="" class="hero-btn">CONTACT US</a>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
     </section>
 
     <!-- Footer -->
@@ -179,6 +180,29 @@
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+    </script>
+    
+
+    <!-- Lenis smooth and premium scroll behavior -->
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+            direction: "vertical",
+            gestureDirection: "vertical",
+            smooth: true,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+
     </script>
 </body>
 
