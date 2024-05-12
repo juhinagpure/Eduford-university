@@ -310,7 +310,11 @@ h3 {
     box-sizing: border-box;
 }
 
-
+.testimonials-col img{
+    margin: 2vh;
+    width: 20vh;
+    border-radius: 12px;
+}
 
 .testimonials-col p {
     padding: 0;
@@ -329,10 +333,13 @@ h3 {
 }
 
 
-@media(max-width:700px) {
+@media(max-width:1000px) {
     .testimonials-col img {
         margin-left: 0px;
         margin-right: 15px;
+    }
+    .row{
+        flex-direction: column;
     }
 }
 
@@ -560,4 +567,103 @@ h3 {
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+
+.h-heading {
+    text-align: center;  /* Center the text horizontally */
+  }
+  
+  .placement-company {
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .placement-company .comp {
+    margin: 0 10px 10px 0; 
+    display: inline-block;
+  }
+  
+  .p-com-logo img {
+    width: auto;  
+    height: 100px;
+    width: 100px;
+    gap :10vh  ;
+  }
+
+  .section {
+    display: flex;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+  .placement-heading {
+    text-align: center;
+  }
+  
+  .placement-company {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .placement-company .comp {
+    margin: 0 10px 10px 0;
+    display: inline-block;
+  }
+  
+  .p-com-logo img {
+    width: auto;
+    height: 12vh; /* Adjust image height as needed */
+  }
+
+.researchinnovation{
+    margin-top: 4vh;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}  
+.research{
+    margin: 0vh 3vh;
+    padding: 1vh;
+    display: flex;
+    overflow: scroll;
+    
+    scrollbar-width: none;
+}
+.research-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 1vh;
+}
+
+
+.r-card {
+    position: relative;
+    transition: transform 1s; 
+}
+
+/* 3D effect on hover */
+.r-card:hover {
+    animation: effect3d 3s  .2s 1 ;
+}
+@keyframes effect3d {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    25%{
+        transform: perspective(1000px)rotateY(-10deg) rotateX(20deg);
+    }
+    50%{
+        transform: perspective(1000px) rotateY(10deg) rotatex(-20deg) ;
+    }
+    100%{
+        transform: perspective(1000px) rotateY(20deg);
+    }
+}
+
+.r-card img {
+    width: 250px;
+    height: 150px; 
+    border-radius: 8px; /* Add border radius if needed */
 }
