@@ -62,7 +62,7 @@ nav img {
 
 .text-box {
     width: 90%;
-    color:#fff;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,19 +95,21 @@ nav img {
 .hero-btn:hover {
     transition: 1s;
 }
+
 .hero-btn:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #725AC1;
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
 }
 
 .hero-btn:active {
-  transform: scale(0.9);
+    transform: scale(0.9);
 }
+
 nav .fa-bars {
     display: none;
 }
 
-nav .fa-xmark{
+nav .fa-xmark {
     display: none;
 }
 
@@ -117,7 +119,7 @@ nav .fa-xmark{
         font-size: 20px;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
 
@@ -275,10 +277,11 @@ h3 {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.facilities-col img:hover{
+.facilities-col img:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .facilities-col p {
     padding: 5px;
 }
@@ -324,8 +327,9 @@ h3 {
 .testimonials-col .fa {
     color: #f44336;
 }
-.testimonials-col .fa-solid{
-    color: #f44336; 
+
+.testimonials-col .fa-solid {
+    color: #f44336;
 }
 
 
