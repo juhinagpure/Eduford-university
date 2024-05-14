@@ -292,19 +292,22 @@ h3 {
 
 /* testimonials */
 .testimonials {
-    width: 80%;
+    width: 70%;
+    padding: 5;
     margin: auto;
-    padding: 10px;
     text-align: center;
 }
-
+.testimonials .test_image{
+    height: 130px;
+    width: 130px;
+    margin-right: 20px;
+}
 .testimonials-col {
-    flex-basis: 44%;
+    margin-left: 10px;
     border-radius: 10px;
-    margin-bottom: 5%;
     text-align: left;
     background: #fff3f3;
-    padding: 25px;
+    padding: 20px;
     cursor: pointer;
     display: flex;
     box-sizing: border-box;
@@ -317,7 +320,7 @@ h3 {
 }
 
 .testimonials-col h3 {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: left;
 }
 
