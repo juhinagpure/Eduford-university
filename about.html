@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link
@@ -56,10 +58,10 @@
         <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
             diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
         <div class="icons">
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-facebook"></i></a> 
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-twitter"></i></a> 
-        <a style="padding: 10px;" href=""><i class="fa-brands fa-instagram"></i></a>  
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a> 
+        <a style="padding: 10px;" href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a> 
+        <a style="padding: 10px;" href="https://www.twitter.com/"> <i class="fa-brands fa-twitter"></i></a> 
+        <a style="padding: 10px;" href="https://www.instageam.com/"><i class="fa-brands fa-instagram"></i></a>  
+        <a style="padding: 10px;" href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin"></i></a> 
         </div>
         <p>made with <i class="fa-regular fa-heart"></i> By Juhi
         </p>
@@ -76,6 +78,27 @@
         function showMenu() {
             navLinks.style.right = "-200px";
         }
+    </script>
+    
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+            direction: "vertical",
+            gestureDirection: "vertical",
+            smooth: true,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+
     </script>
 </body>
 
