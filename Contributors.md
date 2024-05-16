@@ -1,7 +1,4 @@
-Eduford-university
 
-- **Campus Events Coverage**: Highlights of events, seminars, workshops, and cultural activities organized at Eduford University.
-- **Facilities Showcase**: In-depth features showcasing the university's facilities and amenities, including the library, sports complex, accommodation, and more.
 
 ### Tech Stack
 
@@ -85,4 +82,7 @@ ________________________________________________________________________________
 
 8. Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
-**Note:** In order to create a pull request, you must have a fork of the original repository in your GitHub account and you must have made the changes in that forked repository.
+
+### Let start Contribution
+
+https://user-images.githubusercontent.com/74038190/221352968-ac6f7b24-ed9a-4d00-a045-710caa6fc834.gif
