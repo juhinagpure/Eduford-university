@@ -1,5 +1,4 @@
 
-
 ### Tech Stack
 
 Our website is built using the following technologies:
@@ -85,4 +84,7 @@ ________________________________________________________________________________
 
 ### Let start Contribution
 
-https://user-images.githubusercontent.com/74038190/221352968-ac6f7b24-ed9a-4d00-a045-710caa6fc834.gif
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/221352968-ac6f7b24-ed9a-4d00-a045-710caa6fc834.gif" alt="Alt Text">
+</div>
+
