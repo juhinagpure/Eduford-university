@@ -5,23 +5,19 @@
 }
 
 .header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./eduford_img/banner.png);
-  background-size: cover;
-  background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/banner.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 nav {
-  display: flex;
-  width: 90vw;
-  padding: 2% 6%;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav img {
@@ -314,7 +310,10 @@ h3 {
     box-sizing: border-box;
 }
 
-
+.testimonials-col img{
+    width: 200px;
+    height:200px;
+}
 
 .testimonials-col p {
     padding: 0;
@@ -369,12 +368,19 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    color:white;
+    background-color: rgb(133, 0, 0);
+}
+
+.footer p{
+    color:white;
 }
 
 .footer h1 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+    color:white;
 }
 
 .icons .fa-solid fa-star {
