@@ -40,15 +40,31 @@
         <div class="row">
             <div class="blog-left">
                 <img src="./eduford_img/certificate.jpg" alt="">
-                <h2>2024 Certification Programs Overview</h2>
-                <p>Discover a treasure trove of knowledge and insights within our blog section. Our team of experts and thought leaders delve into diverse topics, offering valuable perspectives, industry trends, and practical advice. From academic discussions to real-world applications, our blogs provide readers with enriching content to enhance their understanding and stimulate curiosity..</p>
-                <br>
-                <h2>Certificate Programs</h2>
-                <p>Elevate your skills and expertise with our comprehensive certificate programs tailored to meet the demands of today's dynamic workforce. Whether you're looking to advance in your current career or explore new opportunities, our certificate programs offer specialized training and hands-on experience to help you achieve your goals. With industry-recognized credentials, you'll gain a competitive edge and unlock new pathways to success.</p>
-                <br>
-                <h2>2024 Offerings</h2>
-                <p>In 2024, we're proud to present an exciting array of certificate programs designed to empower individuals at every stage of their professional journey. From cutting-edge technology to business acumen and beyond, our offerings cater to a wide range of interests and career aspirations. Explore our diverse portfolio of programs and embark on a transformative learning experience that will shape your future success.</p>
-
+                <div class="container1">
+                <div class="wrap">
+                    <h2>2024 Certification Programs Overview</h2>
+                    <p>Discover a treasure trove of knowledge and insights within our blog section. Our team of experts
+                        and thought leaders delve into diverse topics, offering valuable perspectives, industry trends,
+                        and practical advice. From academic discussions to real-world applications, our blogs provide
+                        readers with enriching content to enhance their understanding and stimulate curiosity..</p>
+                </div>
+                <div class="wrap">
+                    <h2>Certificate Programs</h2>
+                    <p>Elevate your skills and expertise with our comprehensive certificate programs tailored to meet
+                        the demands of today's dynamic workforce. Whether you're looking to advance in your current
+                        career or explore new opportunities, our certificate programs offer specialized training and
+                        hands-on experience to help you achieve your goals. With industry-recognized credentials, you'll
+                        gain a competitive edge and unlock new pathways to success.</p>
+                </div>
+                <div class="wrap">
+                    <h2>2024 Offerings</h2>
+                    <p>In 2024, we're proud to present an exciting array of certificate programs designed to empower
+                        individuals at every stage of their professional journey. From cutting-edge technology to
+                        business acumen and beyond, our offerings cater to a wide range of interests and career
+                        aspirations. Explore our diverse portfolio of programs and embark on a transformative learning
+                        experience that will shape your future success.</p>
+                </div>
+            </div>
                 <div class="comment-box">
                     <h3>Leave a comment</h3>
                     <form class="comment-form">
@@ -103,10 +119,10 @@
         <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
             diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
         <div class="icons">
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-facebook"></i></a> 
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-twitter"></i></a> 
-        <a style="padding: 10px;" href=""><i class="fa-brands fa-instagram"></i></a>  
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a> 
+            <a style="padding: 10px;" href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a style="padding: 10px;" href=""> <i class="fa-brands fa-twitter"></i></a>
+            <a style="padding: 10px;" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a>
         </div>
         <p>made with <i class="fa-regular fa-heart"></i> By Juhi
         </p>
@@ -124,7 +140,7 @@
             navLinks.style.right = "-200px";
         }
     </script> -->
-    
+
     <script>
         const lenis = new Lenis({
             duration: 1.2,
@@ -143,6 +159,25 @@
 
         requestAnimationFrame(raf);
 
+        document.addEventListener("DOMContentLoaded", function () {
+    const wraps = document.querySelectorAll('.wrap');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }else {
+    entry.target.classList.remove('show'); /* Highlighted addition */
+}
+
+        });
+    }, { threshold: 0.1 });
+
+    wraps.forEach(wrap => {
+        observer.observe(wrap);
+    });
+});
 
     </script>
 </body>

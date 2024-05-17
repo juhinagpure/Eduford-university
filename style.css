@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    
+}
 
 .header {
     min-height: 100vh;
@@ -289,6 +292,37 @@ h3 {
     text-align: center;
     padding: 10px;
 }
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each .wrap element */
+    padding: 20px; /* Optional: Add some padding around the container */
+}
+
+.wrap {
+    background-color: #f9f9f9; /* Background color for the wrap class */
+    padding: 20px; /* Padding inside each wrap element */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+    margin-bottom: 20px; 
+    opacity: 0; /* Initially hide the element */
+    transform: translateX(-100px); 
+}
+
+.wrap:hover {
+    transform: scale(1.05); /* Scale up the wrap element on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+.wrap.show {
+    opacity: 1; /* Show the element */
+    transform: translateX(0); /* Move the element to its final position */
+    transition: transform 2s ease, opacity 0.6s ease; /* Smooth transition for the animation */
+}
+h2, p {
+    margin: 0; /* Remove default margin */
+}
+
 
 /* testimonials */
 .testimonials {
