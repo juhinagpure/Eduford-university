@@ -609,4 +609,29 @@ h3 {
     width: 40px;
     height: 40px;
   }
-
+  .icons ul li{
+    display:inline-block;
+    /* margin:10px 20px 10px 20px; */
+    margin:10px;
+    opacity:0.8;
+  }
+  .icons ul li:hover{
+    opacity:1;
+    transform: scale(1.5);
+    transition-timing-function: ease-in-out;
+    transform:scale(1.5) ;
+  }
+  .icons ul li i{
+    position: relative;
+  }
+  .icons ul li a:hover i{
+    transform:rotateY(360deg);
+    transition:transform 2.5s;
+    transition-delay:0.275s;
+    transition-duration: 3s;
+    
+  }
+  .icons ul li i:before{
+    transition:.5s;
+    top:0;
+  }
