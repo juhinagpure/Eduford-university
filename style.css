@@ -270,11 +270,15 @@ h3 {
     text-align: left;
 }
 
-.facilities-col img {
+.facilities-col-inner{
+    position: relative;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .facilities-col img:hover {
@@ -286,11 +290,33 @@ h3 {
     padding: 5px;
 }
 
-.facilities-col h3 {
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: center;
+.facilities-col-back {
+    background-color:#f44336;
+    color:#f0f0f0;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 10px;
+    text-align: center;
+}
+.facilities-col-back p,
+.facilities-col-back h3 {
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.facilities-col:hover .facilities-col-back p,
+.facilities-col:hover .facilities-col-back h3{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.facilities-col-back p {
+    color: #fff3f3;
 }
 
 /* testimonials */
@@ -304,6 +330,7 @@ h3 {
 .testimonials-col {
     height: 407px;
     width: 500px;
+
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -313,6 +340,7 @@ h3 {
     cursor: pointer;
     display: flex;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .testimonials-col img {
@@ -326,6 +354,7 @@ h3 {
 .testimonials-col p {
     font-size: 10px;
     padding: 0;
+    margin: 0; /* Add margin to avoid overflow */
 }
 
 .testimonials-col h3 {
@@ -338,16 +367,22 @@ h3 {
 }
 
 .testimonials-col .fa-solid {
+
     color: #f44336;
+
 }
 
+@media (max-width: 700px) {
+    .testimonials-col {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-@media(max-width:700px) {
     .testimonials-col img {
-        margin-left: 0px;
-        margin-right: 15px;
+        margin: 0 0 15px 0;
     }
 }
+
 
 /* call to action */
 .cta {
@@ -574,3 +609,4 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
