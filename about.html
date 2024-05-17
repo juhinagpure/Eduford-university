@@ -20,64 +20,79 @@
 </head>
 
 <body>
-    <section class="sub-header">
-        <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links id=" navLinks">
-                <i class="fa fa-time" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div><i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <h1>About Us</h1>
-    </section>
+    <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+            <ul>
+                <li class="active-nav"><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menuIcon" style="display : none;"></i>
+        <!-- </div><i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
+    </nav>
+    <div class="active-navbar hide" id="sidebar">
+            
+        <ul>
+            <li class=""><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        
+    <!-- </div><i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
+    </div>
+    <div class="section">
 
-    <!-- aboust us content -->
-    <section class="about-us">
-        <div class="row">
-            <div class="about-col">
-                <h1>Our university stands as the world's largest educational institution</h1>
-                <p>Welcome to our prestigious university, where academic excellence and innovation merge to shape future leaders. With a rich history, we empower students to reach their full potential and contribute to society. Our diverse community fosters collaboration, exploration, and boundaries. With state-of-the-art facilities and world-renowned faculty, we provide a dynamic learning environment. Join us for academic journeys or career advancements to become part of our legacy of excellence.</p>
-                <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        <section class="sub-header">
+            <h1>About Us</h1>
+        </section>
+    
+        <!-- aboust us content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Our university stands as the world's largest educational institution</h1>
+                    <p>Welcome to our prestigious university, where academic excellence and innovation merge to shape future leaders. With a rich history, we empower students to reach their full potential and contribute to society. Our diverse community fosters collaboration, exploration, and boundaries. With state-of-the-art facilities and world-renowned faculty, we provide a dynamic learning environment. Join us for academic journeys or career advancements to become part of our legacy of excellence.</p>
+                    <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="./eduford_img/about.jpg" alt="">
+                </div>
             </div>
-            <div class="about-col">
-                <img src="./eduford_img/about.jpg" alt="">
+    
+        </section>
+    
+    
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
+                diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
+            <div class="icons">
+            <a style="padding: 10px;" href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a> 
+            <a style="padding: 10px;" href="https://www.twitter.com/"> <i class="fa-brands fa-twitter"></i></a> 
+            <a style="padding: 10px;" href="https://www.instageam.com/"><i class="fa-brands fa-instagram"></i></a>  
+            <a style="padding: 10px;" href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin"></i></a> 
             </div>
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
-            diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
-        <div class="icons">
-        <a style="padding: 10px;" href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a> 
-        <a style="padding: 10px;" href="https://www.twitter.com/"> <i class="fa-brands fa-twitter"></i></a> 
-        <a style="padding: 10px;" href="https://www.instageam.com/"><i class="fa-brands fa-instagram"></i></a>  
-        <a style="padding: 10px;" href="https://www.linkedin.com"> <i class="fa-brands fa-linkedin"></i></a> 
-        </div>
-        <p>made with <i class="fa-regular fa-heart"></i> By Juhi
-        </p>
-    </section>
+            <p>made with <i class="fa-regular fa-heart"></i> By Juhi
+            </p>
+        </section>
+    </div>
 
     <!-- javascript for toggle menu -->
     <script>
-        var navLinks = document.getElementById("navLinks");
-
+        
+        
         function showMenu() {
-            navLinks.style.right = "0";
+            console.log('hi')
+            document.getElementById("sidebar").classList.toggle("hide")
         }
-
-        function showMenu() {
-            navLinks.style.right = "-200px";
-        }
+        document.getElementById("menuIcon").addEventListener("click", showMenu)
+        
     </script>
     
     <script>

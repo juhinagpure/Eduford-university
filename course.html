@@ -20,97 +20,112 @@
 </head>
 
 <body>
-    <section class="sub-header">
-        <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links" id=" navLinks">
-                <i class="fa fa-time" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div><i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+    <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+            <ul>
+                <li class="active-nav"><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menuIcon" style="display : none;"></i>
+        <!-- </div><i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
+    </nav>
+    <div class="active-navbar hide" id="sidebar1">
+            
+        <ul>
+            <li class=""><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        
+    <!-- </div><i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
+    </div>
+    <div class="section">
+
+        <section class="sub-header">
+        </section>
         <h1>Our Courses</h1>
-    </section>
-
-    <!-- course -->
-    <section class="course">
-        <h1>Courses We Offer</h1>
-        <p>This is the main classes we provide at our university </p>
-        <div class="row">
-            <div class="course-col">
-                <h3>Computer science</h3>
-                <p>This class typically covers fundamental concepts in computer science such as algorithms, data structures, programming languages, and software engineering principles. Students may learn programming and gain skills in problem-solving and logical thinking.</p>
+    
+        <!-- course -->
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>This is the main classes we provide at our university </p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Computer science</h3>
+                    <p>This class typically covers fundamental concepts in computer science such as algorithms, data structures, programming languages, and software engineering principles. Students may learn programming and gain skills in problem-solving and logical thinking.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Principles of Economics:</h3>
+                    <p>This class introduces students to basic economic principles such as supply and market structures, and theories of consumer behavior. It provides a foundation for understanding economic systems and decision-making at both individual and societal levels.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Introduction to Psychology</h3>
+                    <p>This class explores the fundamentals of psychology including topics such as human development and mental health. Students may learn about different theoretical perspectives in psychology and how research methods are used to study behavior and mental processes.</p>
+                </div>
             </div>
-            <div class="course-col">
-                <h3>Principles of Economics:</h3>
-                <p>This class introduces students to basic economic principles such as supply and market structures, and theories of consumer behavior. It provides a foundation for understanding economic systems and decision-making at both individual and societal levels.</p>
+        </section>
+    
+        <!-- facilities -->
+        <section class="facilities">
+            <h1>Our facilities</h1>
+            <p>Our university boasts state-of-the-art facilities equipped with cutting-edge technology
+    
+            </p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="./eduford_img/library.png" alt="">
+                    <h3>World Class Library</h3>
+                    <p>Our world-class library offers a vast collection of books, journals, and digital resources from around the globe, providing a sanctuary for learning.</p>
+                </div>
+    
+                <div class="facilities-col">
+                    <img src="./eduford_img/basketball.png" alt="">
+                    <h3>Athletic Excellence</h3>
+                    <p>Our premier basketball playground, featuring state-of-art facilities, fosters athletic prowess and sportsmanship and fostering a love for the game..</p>
+                </div>
+    
+                <div class="facilities-col">
+                    <img src="./eduford_img/cafeteria.png" alt="">
+                    <h3>Culinary Oasis of Diversity</h3>
+                    <p>Our cafeteria offers a diverse range of global cuisines, fostering a welcoming atmosphere that nourishes both body and spirit.</p>
+                </div>
             </div>
-            <div class="course-col">
-                <h3>Introduction to Psychology</h3>
-                <p>This class explores the fundamentals of psychology including topics such as human development and mental health. Students may learn about different theoretical perspectives in psychology and how research methods are used to study behavior and mental processes.</p>
+        </section>
+    
+    
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
+                diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
+            <div class="icons">
+            <a style="padding: 10px;" href=""> <i class="fa-brands fa-facebook"></i></a> 
+            <a style="padding: 10px;" href=""> <i class="fa-brands fa-twitter"></i></a> 
+            <a style="padding: 10px;" href=""><i class="fa-brands fa-instagram"></i></a>  
+            <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a> 
             </div>
-        </div>
-    </section>
-
-    <!-- facilities -->
-    <section class="facilities">
-        <h1>Our facilities</h1>
-        <p>Our university boasts state-of-the-art facilities equipped with cutting-edge technology
-
-        </p>
-        <div class="row">
-            <div class="facilities-col">
-                <img src="./eduford_img/library.png" alt="">
-                <h3>World Class Library</h3>
-                <p>Our world-class library offers a vast collection of books, journals, and digital resources from around the globe, providing a sanctuary for learning.</p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="./eduford_img/basketball.png" alt="">
-                <h3>Athletic Excellence</h3>
-                <p>Our premier basketball playground, featuring state-of-art facilities, fosters athletic prowess and sportsmanship and fostering a love for the game..</p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="./eduford_img/cafeteria.png" alt="">
-                <h3>Culinary Oasis of Diversity</h3>
-                <p>Our cafeteria offers a diverse range of global cuisines, fostering a welcoming atmosphere that nourishes both body and spirit.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
-            diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
-        <div class="icons">
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-facebook"></i></a> 
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-twitter"></i></a> 
-        <a style="padding: 10px;" href=""><i class="fa-brands fa-instagram"></i></a>  
-        <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a> 
-        </div>
-        <p>made with <i class="fa-regular fa-heart"></i> By Juhi
-        </p>
-    </section>
+            <p>made with <i class="fa-regular fa-heart"></i> By Juhi
+            </p>
+        </section>
+    </div>
 
 
     <!-- javascript for toggle menu -->
     <script>
-        var navLinks = document.getElementById("navLinks");
-
+        
+        
         function showMenu() {
-            navLinks.style.right = "0";
+            console.log('hi')
+            document.getElementById("sidebar1").classList.toggle("hide")
         }
-
-        function showMenu() {
-            navLinks.style.right = "-200px";
-        }
+        document.getElementById("menuIcon").addEventListener("click", showMenu)
+        
     </script>
     
     <script>
