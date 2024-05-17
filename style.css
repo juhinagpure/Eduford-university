@@ -22,16 +22,22 @@ body{
   background-position: center;
 }
 
+
+
 nav {
-  display: flex;
-  width: 100%;
-  padding: 2% 6%;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
-}
+    display: flex;
+    width: 100%;
+    padding: 2% 6%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; 
+    top: 0; /* Ensure it stays at the top of the viewport */
+    left: 0; /* Ensure it stays at the left of the viewport */
+    z-index: 1000; /* Make sure it's above other content */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  }
+  
 
 nav img {
     width: 150px;
@@ -413,25 +419,33 @@ h3 {
     color: #f44336;
 }
 
+
 /* About us page */
 .sub-header {
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/background.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat; 
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub-header h1 {
-    margin-top: 100px;
+    margin: 0;
+    padding: 0;
 }
+
 
 .about-us {
     width: 80%;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
