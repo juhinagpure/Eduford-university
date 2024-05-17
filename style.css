@@ -2,35 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
-   
-  
 }
-body{
-    overflow-x: hidden;
-    
-}
-
 
 .header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./eduford_img/banner.png);
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/banner.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 nav {
-  display: flex;
-  width: 100%;
-  padding: 2% 6%;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav img {
@@ -75,7 +62,7 @@ nav img {
 
 .text-box {
     width: 90%;
-    color:#fff;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,19 +95,21 @@ nav img {
 .hero-btn:hover {
     transition: 1s;
 }
+
 .hero-btn:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #725AC1;
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
 }
 
 .hero-btn:active {
-  transform: scale(0.9);
+    transform: scale(0.9);
 }
+
 nav .fa-bars {
     display: none;
 }
 
-nav .fa-xmark{
+nav .fa-xmark {
     display: none;
 }
 
@@ -130,7 +119,7 @@ nav .fa-xmark{
         font-size: 20px;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
 
@@ -161,8 +150,6 @@ nav .fa-xmark{
 
 /* course */
 .course {
-  
-
     width: 80%;
     margin: auto;
     text-align: center;
@@ -183,25 +170,19 @@ p {
 }
 
 .row {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    justify-content: space-between;
-    
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
 .course-col {
-    z-index: -1;
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    
     transition: 0.5s;
-    position: relative;
 }
 
 h3 {
@@ -211,10 +192,7 @@ h3 {
 }
 
 .course-col:hover {
-    transform: scale(1.5);
-    
-  
-   
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media(max-width: 700px) {
@@ -232,7 +210,6 @@ h3 {
 }
 
 .campus-col {
-    z-index: -1;
     flex-basis: 32%;
     border-radius: 10px;
     margin: 30px;
@@ -256,7 +233,6 @@ h3 {
 }
 
 .layer:hover {
-
     background: rgba(226, 0, 0, 0.7);
 
 }
@@ -288,7 +264,6 @@ h3 {
 }
 
 .facilities-col {
-    z-index: -1;
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -302,10 +277,11 @@ h3 {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.facilities-col img:hover{
+.facilities-col img:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .facilities-col p {
     padding: 5px;
 }
@@ -326,8 +302,8 @@ h3 {
 }
 
 .testimonials-col {
-    text-align: center;
-    z-index: -1;
+    height: 407px;
+    width: 500px;
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -339,22 +315,30 @@ h3 {
     box-sizing: border-box;
 }
 
+.testimonials-col img {
+    margin-right: 10px;
+    border-radius: 12px;
+    height: 355px;
+    width: 400px;
+}
 
 
 .testimonials-col p {
+    font-size: 10px;
     padding: 0;
 }
 
 .testimonials-col h3 {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: left;
 }
 
 .testimonials-col .fa {
     color: #f44336;
 }
-.testimonials-col .fa-solid{
-    color: #f44336; 
+
+.testimonials-col .fa-solid {
+    color: #f44336;
 }
 
 
@@ -581,7 +565,7 @@ h3 {
     font-weight: 400;
 }
 
-
+.contact-col input,
 .contact-col textarea {
     width: 100%;
     padding: 15px;
@@ -590,23 +574,3 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
-.go-top-btn {
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .go-top-btn img {
-    width: 40px;
-    height: 40px;
-  }
-
