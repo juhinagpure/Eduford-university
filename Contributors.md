@@ -75,8 +75,13 @@ To push your changes, run the following command in your terminal:
     ```
 
 **9.** Create a PR.
+**10.** Submit a Pull Request: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
 
-__________________________________________________________________________________________________________________________________________________________________
+**11.** Congratulations! You've made your first contribution! 🙌🏼
+
+Thank you for contributing💗
+
+![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
 ## Alternatively Using GitHub Desktop
 
@@ -96,8 +101,7 @@ ________________________________________________________________________________
 
 **8.** Once you're satisfied with your pull request, click the "Create pull request" button to submit it.
 
-__________________________________________________________________________________________________________________________________________________________________
-
+![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 ### Let start Contribution
 
 <div align="center">
