@@ -12,3 +12,123 @@
     transition: all 0.5s;
     background: #fff3f3;
 }
+
+#forms{
+  width:max-content;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+#forms:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
+
+#name{
+  
+  width:270px;
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 15px;
+  margin: 5px;
+  height: 40px;
+  margin-right:40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+ 
+ 
+}
+#name:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
+#Email{
+  width:270px;
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 15px;
+  margin: 5px;
+  height: 40px;
+  margin-right:40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+#Email:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
+#Password{
+
+  width:270px;
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 15px;
+  margin: 5px;
+  height: 40px;
+  margin-right:40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+
+}
+#Password:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
+#Age{
+
+  width:270px;
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 15px;
+  margin: 5px;
+  height: 40px;
+  margin-right:40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+ 
+
+}
+#Age:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
+select{
+margin-left: 15px;
+  width:270px;
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 15px;
+  margin: 5px;
+  height: 40px;
+  margin-right:40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+select:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
+button{
+  width:170px;
+  justify-content: center;
+  align-content: center;
+
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 20px;
+  margin: 5px;
+  height: 44px;
+  margin-right:40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+button:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
+#sub:hover{
+  background-color: #fff3f3;
+  color: #000000;
+}
