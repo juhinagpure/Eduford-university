@@ -1,36 +1,30 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
-   
-  
-}
-body{
     overflow-x: hidden;
-    
 }
 
-
+/* Header */
 .header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./eduford_img/banner.png);
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(./eduford_img/banner.png);
+    background-size: cover;
+    background-position: center;
 }
 
 nav {
-  display: flex;
-  width: 100%;
-  padding: 2% 6%;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    display: flex;
+    width: 90vw;
+    padding: 2% 6%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
 }
 
 nav img {
@@ -75,7 +69,7 @@ nav img {
 
 .text-box {
     width: 90%;
-    color:#fff;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,29 +102,31 @@ nav img {
 .hero-btn:hover {
     transition: 1s;
 }
+
 .hero-btn:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #725AC1;
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
 }
 
 .hero-btn:active {
-  transform: scale(0.9);
+    transform: scale(0.9);
 }
+
 nav .fa-bars {
     display: none;
 }
 
-nav .fa-xmark{
+nav .fa-xmark {
     display: none;
 }
 
-
-@media(max-width:700px) {
+/* Responsive Navigation */
+@media (max-width: 700px) {
     .text-box h1 {
         font-size: 20px;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
 
@@ -159,10 +155,8 @@ nav .fa-xmark{
     }
 }
 
-/* course */
+/* Course */
 .course {
-  
-
     width: 80%;
     margin: auto;
     text-align: center;
@@ -183,25 +177,19 @@ p {
 }
 
 .row {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    justify-content: space-between;
-    
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
 .course-col {
-    z-index: -1;
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    
     transition: 0.5s;
-    position: relative;
 }
 
 h3 {
@@ -211,19 +199,16 @@ h3 {
 }
 
 .course-col:hover {
-    transform: scale(1.5);
-    
-  
-   
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
     .row {
         flex-direction: column;
     }
 }
 
-/* campus */
+/* Campus */
 .campus {
     width: 80%;
     margin: auto;
@@ -232,7 +217,6 @@ h3 {
 }
 
 .campus-col {
-    z-index: -1;
     flex-basis: 32%;
     border-radius: 10px;
     margin: 30px;
@@ -256,9 +240,7 @@ h3 {
 }
 
 .layer:hover {
-
     background: rgba(226, 0, 0, 0.7);
-
 }
 
 .layer h3 {
@@ -279,7 +261,7 @@ h3 {
     opacity: 1;
 }
 
-/* facilities */
+/* Facilities */
 .facilities {
     width: 80%;
     margin: auto;
@@ -288,7 +270,6 @@ h3 {
 }
 
 .facilities-col {
-    z-index: -1;
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -302,10 +283,11 @@ h3 {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.facilities-col img:hover{
+.facilities-col img:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .facilities-col p {
     padding: 5px;
 }
@@ -317,9 +299,9 @@ h3 {
     padding: 10px;
 }
 
-/* testimonials */
+/* Testimonials */
 .testimonials {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 10px;
     text-align: center;
@@ -335,20 +317,10 @@ h3 {
     cursor: pointer;
     display: flex;
     box-sizing: border-box;
-    align-items: center;
-}
-
-.testimonials-col img {
-    width: 80px; /* Set a specific width for the images */
-    height: 80px; /* Set a specific height for the images */
-    border-radius: 50%; /* Make images circular */
-    margin-right: 20px; /* Space between image and text */
-    object-fit: cover; /* Ensure the image covers the element */
 }
 
 .testimonials-col p {
     padding: 0;
-    margin: 0; /* Add margin to avoid overflow */
 }
 
 .testimonials-col h3 {
@@ -361,26 +333,27 @@ h3 {
 }
 
 .testimonials-col .fa-solid {
-    color: #f44336; 
+    color: #f44336;
 }
 
-@media (max-width: 700px) {
-    .testimonials-col {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.testimonial-img {
+    width: 100%;
+    height: auto;
+}
 
+@media (max-width: 768px) {
     .testimonials-col img {
-        margin: 0 0 15px 0;
+        margin-left: 0px;
+        margin-right: 15px;
     }
 }
 
-
-/* call to action */
+/* Call to Action */
 .cta {
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./eduford_img/banner2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./eduford_img/banner2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -394,13 +367,13 @@ h3 {
     padding: 0;
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
     .cta h1 {
         font-size: 24px;
     }
 }
 
-/* footer */
+/* Footer */
 .footer {
     width: 100%;
     text-align: center;
@@ -424,7 +397,7 @@ h3 {
     color: #f44336;
 }
 
-/* About us page */
+/* About Us Page */
 .sub-header {
     height: 50vh;
     width: 100%;
@@ -449,7 +422,6 @@ h3 {
 .about-col {
     flex-basis: 48%;
     padding: 30px 2px;
-
 }
 
 .about-col img {
@@ -474,7 +446,7 @@ h3 {
     color: #fff;
 }
 
-/* blog-content */
+/* Blog Content */
 .blog-content {
     width: 80%;
     margin: auto;
@@ -541,13 +513,13 @@ h3 {
     background: #f0f0f0;
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
     .sub-header h1 {
         font-size: 24px;
     }
 }
 
-/* contact us page */
+/* Contact Us Page */
 .location {
     width: 80%;
     margin: auto;
@@ -592,7 +564,7 @@ h3 {
     font-weight: 400;
 }
 
-
+.contact-col input,
 .contact-col textarea {
     width: 100%;
     padding: 15px;
@@ -601,23 +573,3 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
-.go-top-btn {
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 30px;
-    width: 30px;
-    
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .go-top-btn img {
-    width: 40px;
-    height: 40px;
-  }
-
