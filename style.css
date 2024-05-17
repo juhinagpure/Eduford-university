@@ -2,22 +2,35 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    
+   
+  
+}
+body{
+    overflow-x: hidden;
+    
 }
 
+
 .header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/banner.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./eduford_img/banner.png);
+  background-size: cover;
+  position: relative;
+  background-position: center;
 }
 
 nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 2% 6%;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
 }
 
 nav img {
@@ -56,6 +69,10 @@ nav img {
     width: 100%;
 }
 
+.nav-links ul li:clicked {
+    text-decoration: underline;
+}
+
 .text-box {
     width: 90%;
     color:#fff;
@@ -89,6 +106,7 @@ nav img {
 }
 
 .hero-btn:hover {
+
     padding: 0.5em 1em;
     background-color: #e13606;
     border: none;
@@ -100,8 +118,18 @@ nav img {
     color: #c4f0c0;
     position: relative;
     box-shadow: 0 4px 6px -1px rgba(130, 189, 35, 0.938), 0 2px 4px -2px rgba(220, 200, 84, 0.1);
+
+    transition: 1s;
+
+}
+.hero-btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
 }
 
+.hero-btn:active {
+  transform: scale(0.9);
+}
 nav .fa-bars {
     display: none;
 }
@@ -147,6 +175,8 @@ nav .fa-xmark{
 
 /* course */
 .course {
+  
+
     width: 80%;
     margin: auto;
     text-align: center;
@@ -167,19 +197,25 @@ p {
 }
 
 .row {
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+    
     display: flex;
     justify-content: space-between;
 }
 
 .course-col {
+    z-index: -1;
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     padding: 20px 12px;
     box-sizing: border-box;
+    
     transition: 0.5s;
+    position: relative;
 }
 
 h3 {
@@ -189,7 +225,10 @@ h3 {
 }
 
 .course-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.5);
+    
+  
+   
 }
 
 @media(max-width: 700px) {
@@ -207,6 +246,7 @@ h3 {
 }
 
 .campus-col {
+    z-index: -1;
     flex-basis: 32%;
     border-radius: 10px;
     margin: 30px;
@@ -230,6 +270,7 @@ h3 {
 }
 
 .layer:hover {
+
     background: rgba(226, 0, 0, 0.7);
 
 }
@@ -261,6 +302,7 @@ h3 {
 }
 
 .facilities-col {
+    z-index: -1;
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -270,27 +312,36 @@ h3 {
 .facilities-col img {
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.facilities-col img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 .facilities-col p {
-    padding: 0;
+    padding: 5px;
 }
 
 .facilities-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
+    padding: 10px;
 }
 
 /* testimonials */
 .testimonials {
     width: 80%;
     margin: auto;
-    padding: 100px;
+    padding: 10px;
     text-align: center;
 }
 
 .testimonials-col {
+    text-align: center;
+    z-index: -1;
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -302,12 +353,7 @@ h3 {
     box-sizing: border-box;
 }
 
-.testimonials-col img {
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 30px;
-    border-radius: 50%;
-}
+
 
 .testimonials-col p {
     padding: 0;
@@ -549,7 +595,7 @@ h3 {
     font-weight: 400;
 }
 
-.contact-col input,
+
 .contact-col textarea {
     width: 100%;
     padding: 15px;
@@ -558,3 +604,25 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+
+.go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .go-top-btn img {
+    width: 40px;
+    height: 40px;
+  }
+
+
