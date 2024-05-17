@@ -30,6 +30,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  top: 0;
+  z-index: 500;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
 }
 
