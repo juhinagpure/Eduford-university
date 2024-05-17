@@ -326,8 +326,6 @@ h3 {
 }
 
 .testimonials-col {
-    text-align: center;
-    z-index: -1;
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -337,12 +335,20 @@ h3 {
     cursor: pointer;
     display: flex;
     box-sizing: border-box;
+    align-items: center;
 }
 
-
+.testimonials-col img {
+    width: 80px; /* Set a specific width for the images */
+    height: 80px; /* Set a specific height for the images */
+    border-radius: 50%; /* Make images circular */
+    margin-right: 20px; /* Space between image and text */
+    object-fit: cover; /* Ensure the image covers the element */
+}
 
 .testimonials-col p {
     padding: 0;
+    margin: 0; /* Add margin to avoid overflow */
 }
 
 .testimonials-col h3 {
@@ -353,17 +359,22 @@ h3 {
 .testimonials-col .fa {
     color: #f44336;
 }
-.testimonials-col .fa-solid{
+
+.testimonials-col .fa-solid {
     color: #f44336; 
 }
 
+@media (max-width: 700px) {
+    .testimonials-col {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-@media(max-width:700px) {
     .testimonials-col img {
-        margin-left: 0px;
-        margin-right: 15px;
+        margin: 0 0 15px 0;
     }
 }
+
 
 /* call to action */
 .cta {
