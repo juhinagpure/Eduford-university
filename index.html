@@ -22,7 +22,7 @@
 <body>
     <section class="header">
         <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links" id=" navLinks">
+            <div class="nav-links" id="navLinks">
                 <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li class="active-nav"><a href="index.html">HOME</a></li>
@@ -234,14 +234,21 @@
 
     <!-- javascript for toggle menu -->
     <script>
-        var navLinks = document.getElementById("navLinks");
-
+        var navLinks = document.querySelector("#navLinks");
+        var cross=document.querySelector('.fa-xmark');
         function showMenu() {
-            navLinks.style.right = "0";
+            navLinks.style.display="block";
+            navLinks.style.position = "absolute";
+            navLinks.style.right='42px';
+            navLinks.style.width='400px';
+            cross.style.display="block";
         }
 
         function hideMenu() {
-            navLinks.style.right = "-200px";
+            // navLinks.style.position='relative';
+            // navLinks.style.right="-200px";
+            // cross.style.display="block";
+            navLinks.style.display="none";
         }
     </script>
 

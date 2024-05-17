@@ -41,7 +41,11 @@ nav img {
     flex: 1;
     text-align: right;
 }
-
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .nav-links ul li {
     list-style: none;
     display: inline-block;
@@ -72,7 +76,19 @@ nav img {
 .nav-links ul li:clicked {
     text-decoration: underline;
 }
-
+ /* .hamburger{
+     display: none; 
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 1.5%;
+}
+.line{
+    width: 36px;
+    height: 5px;
+    margin: 4px 4px;
+    background-color: white;
+} */
 .text-box {
     width: 90%;
     color: #fff;
@@ -127,7 +143,7 @@ nav .fa-xmark {
 
 @media(max-width:700px) {
     .text-box h1 {
-        font-size: 20px;
+        font-size: 60px;
     }
 
     .nav-links ul li {
@@ -135,9 +151,9 @@ nav .fa-xmark {
     }
 
     .nav-links {
-        position: fixed;
+        position: absolute;
         background: #f44336;
-        height: 100vh;
+        height: 18vh;
         width: 200px;
         top: 0;
         right: -200px;
@@ -146,14 +162,20 @@ nav .fa-xmark {
         transition: 1s;
     }
 
-    nav .fa {
+    nav .fa-bars {
         display: block;
         color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
-
+    nav .fa-xmark {
+        display: none;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
     .nav-links ul {
         padding: 30px;
     }
