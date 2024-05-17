@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    
+   
+  
 }
+body{
+    overflow-x: hidden;
+    
+}
+
 
 .header {
   min-height: 100vh;
@@ -10,12 +18,13 @@
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(./eduford_img/banner.png);
   background-size: cover;
+  position: relative;
   background-position: center;
 }
 
 nav {
   display: flex;
-  width: 90vw;
+  width: 100%;
   padding: 2% 6%;
   text-align: center;
   justify-content: space-around;
@@ -152,6 +161,8 @@ nav .fa-xmark{
 
 /* course */
 .course {
+  
+
     width: 80%;
     margin: auto;
     text-align: center;
@@ -172,19 +183,25 @@ p {
 }
 
 .row {
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+    
     display: flex;
     justify-content: space-between;
 }
 
 .course-col {
+    z-index: -1;
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     padding: 20px 12px;
     box-sizing: border-box;
+    
     transition: 0.5s;
+    position: relative;
 }
 
 h3 {
@@ -194,7 +211,10 @@ h3 {
 }
 
 .course-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.5);
+    
+  
+   
 }
 
 @media(max-width: 700px) {
@@ -212,6 +232,7 @@ h3 {
 }
 
 .campus-col {
+    z-index: -1;
     flex-basis: 32%;
     border-radius: 10px;
     margin: 30px;
@@ -235,6 +256,7 @@ h3 {
 }
 
 .layer:hover {
+
     background: rgba(226, 0, 0, 0.7);
 
 }
@@ -266,6 +288,7 @@ h3 {
 }
 
 .facilities-col {
+    z-index: -1;
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -303,6 +326,8 @@ h3 {
 }
 
 .testimonials-col {
+    text-align: center;
+    z-index: -1;
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
