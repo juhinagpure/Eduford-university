@@ -106,7 +106,21 @@ nav img {
 }
 
 .hero-btn:hover {
+
+    padding: 0.5em 1em;
+    background-color: #e13606;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    color: #c4f0c0;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(130, 189, 35, 0.938), 0 2px 4px -2px rgba(220, 200, 84, 0.1);
+
     transition: 1s;
+
 }
 .hero-btn:hover {
   color: white;
@@ -591,6 +605,7 @@ h3 {
     box-sizing: border-box;
 }
 
+
 .go-top-btn {
     position: fixed;
     bottom: 35px;
@@ -609,4 +624,5 @@ h3 {
     width: 40px;
     height: 40px;
   }
+
 
