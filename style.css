@@ -31,6 +31,7 @@ nav {
   align-items: center;
   position: fixed;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  z-index: 1;
 }
 
 nav img {
@@ -40,6 +41,7 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
+    margin-right: 100px;
 }
 
 .nav-links ul li {
@@ -57,8 +59,8 @@ nav img {
 
 .nav-links ul li::after {
     content: '';
-    width: 0%;
-    height: 2px;
+    width:  0%;
+    height: 1px;
     background: #f44336;
     display: block;
     margin: auto;
@@ -71,6 +73,11 @@ nav img {
 
 .nav-links ul li:clicked {
     text-decoration: underline;
+}
+
+.nav-links .active-nav{
+    color: red;
+    border-bottom: 3px solid red;
 }
 
 .text-box {
@@ -192,14 +199,13 @@ p {
 }
 
 .course-col {
-    z-index: -1;
+    /* z-index: -1; */
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 10%;
     padding: 20px 12px;
     box-sizing: border-box;
-    
     transition: 0.5s;
     position: relative;
 }
@@ -211,8 +217,8 @@ h3 {
 }
 
 .course-col:hover {
-    transform: scale(1.5);
-    
+    transform: scale(1.2);
+    box-shadow: 0 0 8px  rgba(153, 153, 153, 0.8);
   
    
 }
@@ -232,7 +238,7 @@ h3 {
 }
 
 .campus-col {
-    z-index: -1;
+    /* z-index: -1; */
     flex-basis: 32%;
     border-radius: 10px;
     margin: 30px;
@@ -288,7 +294,7 @@ h3 {
 }
 
 .facilities-col {
-    z-index: -1;
+    /* z-index: -1; */
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -298,13 +304,12 @@ h3 {
 .facilities-col img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.facilities-col img:hover{
+.facilities-col:hover{
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .facilities-col p {
     padding: 5px;
@@ -327,7 +332,7 @@ h3 {
 
 .testimonials-col {
     text-align: center;
-    z-index: -1;
+    /* z-index: -1; */
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
