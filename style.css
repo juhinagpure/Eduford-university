@@ -20,6 +20,7 @@ body{
   background-size: cover;
   position: relative;
   background-position: center;
+  z-index: 1;
 }
 
 nav {
@@ -293,6 +294,7 @@ h3 {
     margin: 30px;
     height: 300px;
     perspective: 1000px;
+    z-index: 0;
 }
 
 .facilities-col-inner{
@@ -684,3 +686,67 @@ h3 {
     transition:.5s;
     top:0;
   }
+
+/* preloader styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: #222;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.preloader.hidden {
+    height: 0;
+}
+
+.loader-wrapper {
+    position: relative;
+}
+.preloader.hidden .loader,
+.preloader.hidden .logo{
+    opacity: 0;
+    pointer-events: none;
+}
+.loader {
+    border: 10px solid transparent;
+    border-radius: 50%;
+    border-top: 10px solid #f44336;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.3s linear infinite;
+    background-color: transparent;
+    z-index: 1;transition: 0.5s;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    background-image: url("./eduford_img/logo-icon.png");
+    background-position: center;
+    background-size: 75px;
+    background-repeat: no-repeat;transition: 0.5s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

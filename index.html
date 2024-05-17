@@ -20,6 +20,14 @@
 </head>
 
 <body>
+    <!-- preloader -->
+    <section class="preloader">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+            <div class="logo"></div>
+        </div>
+    </section>
+    
     <section class="header">
         <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
             <div class="nav-links" id=" navLinks">
@@ -266,6 +274,17 @@
         requestAnimationFrame(raf);
 
 
+    </script>
+
+    <!-- preloader scripts -->
+    <script>
+        const preloader = document.querySelector(".preloader");
+
+        document.addEventListener('DOMContentLoaded', ()=> {
+            setTimeout(()=>{
+                preloader.classList.add("hidden");
+            }, 2000)
+        })
     </script>
 </body>
 
