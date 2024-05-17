@@ -23,6 +23,7 @@ body{
 }
 
 nav {
+    z-index: 10;
   display: flex;
   width: 100%;
   padding: 2% 6%;
@@ -224,6 +225,44 @@ h3 {
 }
 
 /* campus */
+
+.campus-container {
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .campus-slide {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px;
+    z-index: -1;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
 .campus {
     width: 80%;
     margin: auto;
@@ -231,55 +270,16 @@ h3 {
     padding-top: 50px;
 }
 
-.campus-col {
-    z-index: -1;
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin: 30px;
-    position: relative;
-    overflow: hidden;
-}
+ 
 
-.campus-col img {
-    width: 100%;
-    display: block;
-}
 
-.layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-
-.layer:hover {
-
-    background: rgba(226, 0, 0, 0.7);
-
-}
-
-.layer h3 {
-    width: 100%;
-    font-weight: 500;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.layer:hover h3 {
-    bottom: 49%;
-    opacity: 1;
-}
 
 /* facilities */
+
+.container-grid{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+}
 .facilities {
     width: 80%;
     margin: auto;
@@ -292,7 +292,7 @@ h3 {
     background-color: transparent;
     margin: 30px;
     height: 300px;
-    perspective: 1000px;
+    perspective: 800px; 
 }
 
 .facilities-col-inner{
@@ -318,6 +318,7 @@ h3 {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    z-index: -1;
 }
 
 .facilities-col-front img {
@@ -684,3 +685,5 @@ h3 {
     transition:.5s;
     top:0;
   }
+
+ 
