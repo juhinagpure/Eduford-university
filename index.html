@@ -15,7 +15,6 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-    <link rel="stylesheet" href="index.css">
     <title>EDUFORD UNIVERSITY WEBSITE</title>
 </head>
 
@@ -25,11 +24,11 @@
             <div class="nav-links" id=" navLinks">
                 <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li class="active-nav"><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li ><a class="active-nav" href="index.html">HOME</a></li>
+                    <li><a class="nav-item" href="about.html">ABOUT</a></li>
+                    <li><a class="nav-item" href="contact.html">COURSE</a></li>
+                    <li><a class="nav-item" href="blog.html">BLOG</a></li>
+                    <li><a class="nav-item" href="contact.html">CONTACT</a></li>
                 </ul>
             </div><i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
@@ -46,19 +45,19 @@
         <h1>Courses We Offer</h1>
         <p>This is the main classes we provide at our university </p>
         <div class="row">
-            <div class="course-col car">
+            <div class="course-col card">
                 <h3>Computer science</h3>
                 <p>This class typically covers fundamental concepts in computer science such as algorithms, data
                     structures, programming languages, and software engineering principles. Students may learn
                     programming and gain skills in problem-solving and logical thinking.</p>
             </div>
-            <div class="course-col car">
+            <div class="course-col card">
                 <h3>Principles of Economics:</h3>
                 <p>This class introduces students to basic economic principles such as supply and market structures, and
                     theories of consumer behavior. It provides a foundation for understanding economic systems and
                     decision-making at both individual and societal levels.</p>
             </div>
-            <div class="course-col car">
+            <div class="course-col card">
                 <h3>Introduction to Psychology</h3>
                 <p>This class explores the fundamentals of psychology including topics such as human development and
                     mental health. Students may learn about different theoretical perspectives in psychology and how
@@ -97,61 +96,37 @@
 
         </p>
         <div class="row">
-
-            <div class="facilities-col">
-                <div class="facilities-col-inner">
-                    <div class="facilities-col-front">
-                        <img src="./eduford_img/library.png" alt="">
-                    </div>
-                    <div class="facilities-col-back">
-                        <h3>World Class Library</h3>
-                        <p>Our world-class library offers a vast collection of books, journals, and digital resources
-                            from
-                            around the globe, providing a sanctuary for learning.</p>
-                    </div>
-                </div>
+            <div class="facilities-col card">
+                <img src="./eduford_img/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Our world-class library offers a vast collection of books, journals, and digital resources from
+                    around the globe, providing a sanctuary for learning.</p>
             </div>
 
-
-            <div class="facilities-col">
-                <div class="facilities-col-inner">
-                    <div class="facilities-col-front">
-                        <img src="./eduford_img/basketball.png" alt="">
-                    </div>
-                    <div class="facilities-col-back">
-                        <h3>Athletic Excellence</h3>
-                        <p>Our premier basketball playground, featuring state-of-art facilities, fosters athletic
-                            prowess and
-                            sportsmanship and fostering a love for the game..</p>
-                    </div>
-                </div>
+            <div class="facilities-col card">
+                <img src="./eduford_img/basketball.png" alt="">
+                <h3>Athletic Excellence</h3>
+                <p>Our premier basketball playground, featuring state-of-art facilities, fosters athletic prowess and
+                    sportsmanship and fostering a love for the game..</p>
             </div>
 
-            <div class="facilities-col">
-                <div class="facilities-col-inner">
-                    <div class="facilities-col-front">
-                        <img src="./eduford_img/cafeteria.png" alt="">
-                    </div>
-                    <div class="facilities-col-back">
-                        <h3>Culinary Oasis of Diversity</h3>
-                        <p>Our cafeteria offers a diverse range of global cuisines, fostering a welcoming atmosphere
-                            that
-                            nourishes both body and spirit.</p>
-                    </div>
-                </div>
+            <div class="facilities-col card">
+                <img src="./eduford_img/cafeteria.png" alt="">
+                <h3>Culinary Oasis of Diversity</h3>
+                <p>Our cafeteria offers a diverse range of global cuisines, fostering a welcoming atmosphere that
+                    nourishes both body and spirit.</p>
             </div>
         </div>
     </section>
-
     <!-- testmonials -->
     <section class="testimonials">
         <h1>What Our Students Says</h1>
         <p>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability
             to pay when we review your application, and we don’t base our decision on whether you can cover the cost. If
             you’re accepted here, you belong here.</p>
-
+   
         <div class="row">
-            <div class="testimonials-col car">
+            <div class="testimonials-col ">
                 <img src="./eduford_img/user1.jpg" alt="">
                 <div>
                     <p>“Eduford is home to me not because of the fancy buildings like Healy Hall, or its prestigious
@@ -166,21 +141,21 @@
                 </div>
             </div>
 
-            <div class="testimonials-col car">
+            <div class="testimonials-col ">
                 <img src="./eduford_img/user2.jpg" alt="">
                 <div>
                     <p>
                         “It’s likely that you will come to love some of the most amazing souls this campus has to offer.
                         That love may come in the form of friendships that you know will last forever.”</p>
                     <h3>David Byer</h3>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
             </div>
-        </div>
+        </div> 
 
     </section>
 
@@ -196,41 +171,25 @@
         <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
             diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
         <div class="icons">
-            <ul>
-                <li>
-                    <a style="color: blue;" href="https://www.facebook.com/" ><i
-                        class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a style=" color: #1DA1F2;" href="https://twitter.com/" ><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a style="color: #C13584;" href="https://www.instagram.com/" ><i
-                        class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a style=" color: #0077B5;" href="https://www.linkedin.com/" ><i
-                        class="fa-brands fa-linkedin"></i></a>
-                </li>
-            </ul>
-            <!-- <a style="color: blue;" href="https://www.facebook.com/" ><i
+            <a style="margin: 2px; color: blue;" href="https://www.facebook.com/"><i
                     class="fa-brands fa-facebook"></i></a>
-            <a style=" color: #1DA1F2;" href="https://twitter.com/" ><i class="fa-brands fa-twitter"></i></a>
-            <a style="color: #C13584;" href="https://www.instagram.com/" ><i
+            <a style="margin: 2px; color: #1DA1F2;" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a style="margin: 2px; color: #C13584;" href="https://www.instagram.com/"><i
                     class="fa-brands fa-instagram"></i></a>
-            <a style=" color: #0077B5;" href="https://www.linkedin.com/" ><i
-                    class="fa-brands fa-linkedin"></i></a> -->
+            <a style="margin: 2px; color: #0077B5;" href="https://www.linkedin.com/"><i
+                    class="fa-brands fa-linkedin"></i></a>
         </div>
 
         <button class="go-top-btn">
             <img src="up-arrow.png" alt="arrow up">
         </button>
 
-        <script src="ScrollToTop.js"></script>
 
         <p>made with <i class="fa-regular fa-heart"></i> By Juhi
         </p>
     </section>
+
+    <script src="ScrollToTop.js"></script>
 
     <!-- javascript for toggle menu -->
     <script>
