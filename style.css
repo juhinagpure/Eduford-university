@@ -394,12 +394,35 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    border:4px solid rgb(146, 146, 255);
+    background-image:url(https://media3.giphy.com/media/1x2f6CsKnVs5SvdQnM/giphy.gif?cid=6c09b952azu0bboacc430mzawv8fuy09mh7e5uhct9u6grlt&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+
 }
 
 .footer h1 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+}
+.footer h4{
+    font-size: 33px;
+    color:white;
+}
+.footer p{
+    font-size: 18px;
+    color:rgb(239, 234, 234);
+ 
+}
+.footer h4:hover{
+color:rgb(243, 103, 126);
+}
+.footer .icons i{
+    color:rgb(241, 239, 239);
+    font-size:22px;
+}
+.footer .icons i:hover{
+    color:blue;
+    transform: scale(1.5);
 }
 
 .icons .fa-solid fa-star {
@@ -414,10 +437,29 @@ h3 {
 }
 
 /* About us page */
-.sub-header {
+.sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/background.jpg);
+    background-image: linear-gradient(rgba(226, 228, 237, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/edu1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header1{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(232, 234, 240, 0.7), rgba(255, 255, 255, 0.7)), url(./eduford_img/edu2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(181, 190, 229, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/edu3.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -536,6 +578,7 @@ h3 {
     }
 }
 
+
 /* contact us page */
 .location {
     width: 80%;
@@ -550,6 +593,7 @@ h3 {
 .Contact-Us {
     width: 80%;
     margin: auto;
+
 }
 
 .contact-col {
