@@ -41,7 +41,9 @@ nav img {
     flex: 1;
     text-align: right;
 }
-
+.nav-links ul{
+    padding-right: 100px;
+}
 .nav-links ul li {
     list-style: none;
     display: inline-block;
