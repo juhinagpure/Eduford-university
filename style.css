@@ -438,29 +438,65 @@ h3 {
     }
 }
 
-/* footer */
+/* Footer */
 .footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.footer h1 {
-    margin-bottom: 25px;
-    margin-top: 20px;
+.footer h4 {
+    margin-bottom: 20px;
     font-weight: 600;
+    font-size: 24px;
+    color: rgb(64, 14, 230)
 }
 
-.icons .fa-solid fa-star {
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
+.footer p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-.fa-heart-o {
+.footer .icons {
+    margin-top: 20px;
+}
+
+.footer .icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .icons ul li {
+    margin: 0 10px;
+}
+
+.footer .icons ul li a {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .icons ul li a:hover {
     color: #f44336;
 }
+
+@media (max-width: 768px) {
+    .footer p {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .footer .icons ul li {
+        margin: 0 5px;
+    }
+}
+
 
 /* About us page */
 .sub-header {
