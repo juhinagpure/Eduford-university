@@ -581,7 +581,7 @@ h3 {
     font-weight: 400;
 }
 
-.contact-col input,
+
 .contact-col textarea {
     width: 100%;
     padding: 15px;
@@ -590,3 +590,23 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+.go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .go-top-btn img {
+    width: 40px;
+    height: 40px;
+  }
+
