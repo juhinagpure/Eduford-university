@@ -417,6 +417,7 @@ h3 {
 /* call to action */
 .cta {
     margin: 100px auto;
+    margin-top: 0px;
     width: 80%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./eduford_img/banner2.jpg);
     background-position: center;
