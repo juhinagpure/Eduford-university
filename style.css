@@ -394,8 +394,8 @@ h3 {
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    border:4px solid rgb(146, 146, 255);
-    background-image:url(https://media3.giphy.com/media/1x2f6CsKnVs5SvdQnM/giphy.gif?cid=6c09b952azu0bboacc430mzawv8fuy09mh7e5uhct9u6grlt&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g);
+    /* border:4px solid rgb(146, 146, 255);
+    background-image:url(https://media3.giphy.com/media/1x2f6CsKnVs5SvdQnM/giphy.gif?cid=6c09b952azu0bboacc430mzawv8fuy09mh7e5uhct9u6grlt&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g); */
 
 }
 
@@ -406,24 +406,24 @@ h3 {
 }
 .footer h4{
     font-size: 33px;
-    color:white;
+    color:rgb(19, 18, 18);
 }
 .footer p{
     font-size: 18px;
-    color:rgb(239, 234, 234);
+    color:rgb(14, 13, 13);
  
 }
-.footer h4:hover{
+/* .footer h4:hover{
 color:rgb(243, 103, 126);
-}
+} */
 .footer .icons i{
-    color:rgb(241, 239, 239);
+    color:rgb(16, 9, 9);
     font-size:22px;
 }
-.footer .icons i:hover{
+/* .footer .icons i:hover{
     color:blue;
     transform: scale(1.5);
-}
+} */
 
 .icons .fa-solid fa-star {
     color: #f44336;
