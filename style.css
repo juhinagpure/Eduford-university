@@ -185,8 +185,7 @@ p {
 .row {
     margin-top: 10%;
     margin-bottom: 10%;
-    justify-content: space-between;
-    
+  
     display: flex;
     justify-content: space-between;
 }
@@ -373,7 +372,7 @@ h3 {
     cursor: pointer;
     display: flex;
     box-sizing: border-box;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .testimonials-col img {
@@ -381,17 +380,26 @@ h3 {
     height: 80px; /* Set a specific height for the images */
     border-radius: 50%; /* Make images circular */
     margin-right: 20px; /* Space between image and text */
-    object-fit: cover; /* Ensure the image covers the element */
+    object-fit: cover; /* Ensure the image covers the element */    
 }
 
 .testimonials-col p {
     padding: 0;
     margin: 0; /* Add margin to avoid overflow */
+    text-align: left;
 }
 
 .testimonials-col h3 {
     margin-top: 15px;
     text-align: left;
+}
+
+.newdiviframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    
 }
 
 .testimonials-col .fa {
@@ -405,8 +413,21 @@ h3 {
 @media (max-width: 700px) {
     .testimonials-col {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
+
+    .newdiviframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .testimonials-col h3 {
+        text-align: center;
+    }
+
 
     .testimonials-col img {
         margin: 0 0 15px 0;
