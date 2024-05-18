@@ -585,6 +585,73 @@ h3 {
     }
 }
 
+.blog-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+.search-bar{
+    border: 0px solid black;
+    border-bottom: 5px solid #f44336;
+    outline: 0px;
+    padding: 5px;
+    margin: 20px 5px;
+    width: 20vw;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    transition: 0.5s ease-in-out;
+
+}
+
+.search-bar::placeholder{
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.search-bar:focus{
+    width: 70vw;
+}
+
+.blogs-container{
+    margin: 5vw 10vw;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.blogs-container .blog{
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+.blog.hide {
+    display: none;
+}
+
+
+@media screen and (max-width: 420px) {
+    .blog-search{
+        margin: 5vw;
+    }
+    .blog-search label{
+        font-size: 1.5rem;
+    }
+    .search-bar{
+        width: 25vw;
+    }
+    .blogs-container{
+        flex-direction: column;
+    }
+}
+
+
+
 /* contact us page */
 .location {
     width: 80%;
