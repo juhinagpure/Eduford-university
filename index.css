@@ -1,6 +1,7 @@
 .car:hover {
     border: 1px solid black;
     transform: scale(1.05);
+    z-index: 0;
   }
   
 .car:active {
