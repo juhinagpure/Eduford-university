@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/c5182e007e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
 
@@ -23,7 +24,7 @@
 <body>
     <section class="sub-header">
         <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links id=" navLinks">
+            <div class="nav-links" id="navLinks">
                 <i class="fa fa-time" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -36,6 +37,44 @@
         </nav>
         <h1>Our Certificate & Online Programs For 2024</h1>
     </section>
+
+    <!-- Search Bar -->
+    <div class="blog-search">
+        <label for="search-bar">Search For a Blog Here</label>
+        <input type="text" name="search-bar" class="search-bar" id="search-bar" placeholder="Search 🔍"> 
+    </div>
+
+    <!-- blogs -->
+    <div class="blogs-container">
+        <div class="blog">
+            <h1>Blog-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo maxime totam quod doloremque pariatur
+                autem ullam. Explicabo, fugit adipisci culpa 
+                dolorem dolore neque ut eaque praesentium ratione 
+                saepe numquam optio.
+            </p>
+        </div>
+        <div class="blog">
+            <h1>University</h1>
+            <p>Lorem ipsum helloji dolor sit amet consectetur adipisicing elit.
+                Explicabo maxime totam quod doloremque pariatur
+                autem ullam. Explicabo, fugit adipisci culpa 
+                dolorem dolore neque ut eaque praesentium ratione 
+                saepe numquam optio.
+            </p>
+        </div>
+        <div class="blog">
+            <h1>Eduford</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo maxime totam quod doloremque pariatur
+                autem ullam. Explicabo, fugit adipisci culpa 
+                dolorem dolore neque ut eaque praesentium ratione 
+                saepe numquam optio.
+            </p>
+        </div>
+    </div>
+
     <!-- blog page content -->
     <section class="blog-content">
         <div class="row">
@@ -146,6 +185,7 @@
 
 
     </script>
+    <script src="./search.js"></script>
 </body>
 
 </html>
