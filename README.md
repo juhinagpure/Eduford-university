@@ -5,7 +5,7 @@
 
 ## ✨ Features
 
-- User authentication:  Students can sign up and log in to their accounts.
+- 🔒 User Authentication: Secure sign-up and log-in functionalities for students.
 - Course enrollment:  Students can browse available courses and enroll in them.
 - Course schedule:  Students can view their course schedule and upcoming assignments.
 - Academic progress:  Students can track their grades and overall academic performance.
