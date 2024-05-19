@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
@@ -16,13 +16,14 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="index.css">
+
     <title>EDUFORD UNIVERSITY WEBSITE</title>
 </head>
 
 <body>
     <section class="header">
         <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links" id=" navLinks">
+            <div class="nav-links" id="navLinks">
                 <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li class="active-nav"><a href="index.html">HOME</a></li>
@@ -191,46 +192,49 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
-            diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
-        <div class="icons">
-            <ul>
-                <li>
-                    <a style="color: blue;" href="https://www.facebook.com/" ><i
-                        class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a style=" color: #1DA1F2;" href="https://twitter.com/" ><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a style="color: #C13584;" href="https://www.instagram.com/" ><i
-                        class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a style=" color: #0077B5;" href="https://www.linkedin.com/" ><i
-                        class="fa-brands fa-linkedin"></i></a>
-                </li>
-            </ul>
-            <!-- <a style="color: blue;" href="https://www.facebook.com/" ><i
-                    class="fa-brands fa-facebook"></i></a>
-            <a style=" color: #1DA1F2;" href="https://twitter.com/" ><i class="fa-brands fa-twitter"></i></a>
-            <a style="color: #C13584;" href="https://www.instagram.com/" ><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a style=" color: #0077B5;" href="https://www.linkedin.com/" ><i
-                    class="fa-brands fa-linkedin"></i></a> -->
+    <!-- footer section start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="eduford_img/logo.png" alt="image" >
+                    <div class="footer-about">
+                        <p style="font-size:20px;">Welcome to our university, where academic excellence meets vibrant campus life. Join our 
+                            diverse community of learners and discover endless opportunities for growth, innovation, and success
+                        </p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <h2 style="text-decoration-line: underline; text-indent: 3rem; color: rgb(255, 255, 255);">FOLLOW US </h2>
+                    <ul>
+                        <li>
+                            <a style="color: blue; " href="https://www.facebook.com/"  ><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a style=" color: rgba(255, 255, 255, 0.752);" href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a style="color: #C13584;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a style=" color: #0077B5;" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
         <button class="go-top-btn">
             <img src="up-arrow.png" alt="arrow up">
         </button>
 
         <script src="ScrollToTop.js"></script>
 
-        <p>made with <i class="fa-regular fa-heart"></i> By Juhi
-        </p>
-    </section>
+        <center >
+            <p style="font-size:20px;">made with <i class="fa-regular fa-heart"></i> By Juhi
+            </p>
+        </center>
+    </footer>
+    <!-- footer section end -->
 
     <!-- javascript for toggle menu -->
     <script>
@@ -264,8 +268,6 @@
         }
 
         requestAnimationFrame(raf);
-
-
     </script>
 </body>
 
