@@ -1,6 +1,6 @@
 # Eduford University 🎓
 
-Eduford University is a comprehensive web application designed to provide students with an interactive platform to manage their academic journey. Built using HTML, CSS, JavaScript for the front-end, and Node.js for the back-end, this application enables students to enroll in courses, view their course schedule, and track their academic progress seamlessly.
+"Eduford University is a comprehensive web application designed to provide students with an interactive platform to manage their academic journey. Built using HTML, CSS, JavaScript for the front-end, and Node.js for the back-end, this application enables students to enroll in courses, view their course schedule, and track their academic progress seamlessly."
 
 
 ## Features
