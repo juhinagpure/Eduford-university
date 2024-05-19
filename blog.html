@@ -23,12 +23,12 @@
 <body>
     <section class="sub-header">
         <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links id=" navLinks">
-                <i class="fa fa-time" onclick="hideMenu()"></i>
+            <div class="nav-links" id="navLinks">
+                <!-- <i class="fa fa-time" onclick="hideMenu()"></i> -->
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">COURSE</a></li>
+                    <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -113,18 +113,17 @@
         </p>
     </section>
 
-    <!-- javascript for toggle menu
     <script>
         var navLinks = document.getElementById("navLinks");
 
         function showMenu() {
-            navLinks.style.right = "0";
+            if (navLinks.style.right === "0px") {
+                navLinks.style.right = "-200px";
+            } else {
+                navLinks.style.right = "0px";
+            }
         }
-
-        function showMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script> -->
+    </script>
     
     <script>
         const lenis = new Lenis({

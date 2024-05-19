@@ -22,16 +22,16 @@
 <body>
     <section class="header">
         <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links" id=" navLinks">
-                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <div class="nav-links" id="navLinks">
+                <!-- <i class="fa fa-time" onclick="hideMenu()"></i> -->
                 <ul>
-                    <li class="active-nav"><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">COURSE</a></li>
+                    <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-            </div><i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </div><i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -198,19 +198,18 @@
         <div class="icons">
             <ul>
                 <li>
-                    <a style="color: blue;" href="https://www.facebook.com/" ><i
-                        class="fa-brands fa-facebook"></i></a>
+                    <a style="color: blue;" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a style=" color: #1DA1F2;" href="https://twitter.com/" ><i class="fa-brands fa-twitter"></i></a>
+                    <a style=" color: #1DA1F2;" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a style="color: #C13584;" href="https://www.instagram.com/" ><i
-                        class="fa-brands fa-instagram"></i></a>
+                    <a style="color: #C13584;" href="https://www.instagram.com/"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a style=" color: #0077B5;" href="https://www.linkedin.com/" ><i
-                        class="fa-brands fa-linkedin"></i></a>
+                    <a style=" color: #0077B5;" href="https://www.linkedin.com/"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </li>
             </ul>
             <!-- <a style="color: blue;" href="https://www.facebook.com/" ><i
@@ -232,19 +231,18 @@
         </p>
     </section>
 
-    <!-- javascript for toggle menu -->
-    <script>
+      <!-- javascript for toggle menu -->
+      <script>
         var navLinks = document.getElementById("navLinks");
 
         function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
+            if (navLinks.style.right === "0px") {
+                navLinks.style.right = "-200px";
+            } else {
+                navLinks.style.right = "0px";
+            }
         }
     </script>
-
 
     <!-- Lenis smooth and premium scroll behavior -->
     <script>
