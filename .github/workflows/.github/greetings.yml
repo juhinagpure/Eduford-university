@@ -1,0 +1,29 @@
+name: Greetings
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up GitHub CLI
+      run: |
+        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+        sudo apt-add-repository https://cli.github.com/packages
+        sudo apt update
+        sudo apt install gh -y
+
+    - name: Greet user for issues
+      if: github.event_name == 'issues'
+      run: |
+        gh issue comment ${{ github.event.issue.number }} --body "Congratulations, @${{ github.event.issue.user.login }}! 🎉 Thank you for creating your issue. Your contribution is greatly appreciated and we look forward to working with you to resolve the issue. Keep up the great work!We will promptly review your changes and offer feedback. Kindly remember to check our contributing guidelines."
+
+    - name: Greet user for pull requests
+      if: github.event_name == 'pull_request'
+      run: |
+        gh pr comment ${{ github.event.pull_request.number }} --body "Congratulations, @${{ github.event.pull_request.user.login }}! 🎉 Thank you for creating your pull request. Your contribution is greatly appreciated and we look forward to working with you to review and merge your changes. Keep up the great work!We will promptly review your changes and offer feedback. Kindly remember to check our contributing guidelines."
