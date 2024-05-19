@@ -7,7 +7,7 @@
 
 - 🔒 User Authentication: Secure sign-up and log-in functionalities for students.
 - 📚 Course Enrollment: Browse and enroll in available courses with ease.
-- Course schedule:  Students can view their course schedule and upcoming assignments.
+- 📅 Course Schedule: View detailed course schedules and upcoming assignments.
 - Academic progress:  Students can track their grades and overall academic performance.
 
 ## Installation
