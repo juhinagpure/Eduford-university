@@ -21,17 +21,23 @@
 
 <body>
     <section class="sub-header">
-        <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
-            <div class="nav-links id=" navLinks">
-                <i class="fa fa-time" onclick="hideMenu()"></i>
+        <nav>
+            <a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id=" navLinks">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li class="active-nav"><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-            </div><i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="menu" onclick="fn1()">
+                <label for="chk1">
+                    <i id="toggleButton" class="fa fa-bars"></i>
+                </label>
+            </div>
         </nav>
         <h1>About Us</h1>
     </section>
@@ -69,14 +75,21 @@
 
     <!-- javascript for toggle menu -->
     <script>
-        var navLinks = document.getElementById("navLinks");
+        let navLink = document.querySelector('nav-links');
+        let Nav = document.querySelector('nav');
+        let menu = document.querySelector('menu');
 
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
+        const fn1 = () => {
+            Nav.classList.toggle('open');
+            console.log('open');
+            if (toggleButton.classList.contains('fa-bars')) {
+                toggleButton.classList.remove('fa-bars');
+                toggleButton.classList.add('fa-close');
+            } else {
+                toggleButton.classList.remove('fa-close');
+                toggleButton.classList.add('fa-bars');
+            }
 
-        function showMenu() {
-            navLinks.style.right = "-200px";
         }
     </script>
     
