@@ -30,7 +30,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  background-image: linear-gradient(rgba(91, 91, 93, 0.7), rgba(4, 9, 30, 0.7));
 }
 
 nav img {
@@ -684,3 +684,11 @@ h3 {
     transition:.5s;
     top:0;
   }
+
+#dark{
+    cursor: pointer;
+}
+.dark-mode{
+    background-color: black;
+    color: rgb(137, 135, 135);
+}
