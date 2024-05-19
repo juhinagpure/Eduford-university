@@ -1,0 +1,28 @@
+/* footer section start */
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	font-size:25px;
+    max-width:1820px;
+    margin:0 auto;
+	overflow-x:hidden;
+	font-family: poppins;	
+}
+#footer{
+    padding: 5rem;
+    background-image: linear-gradient(rgba(21, 20, 20, 0), rgba(0, 0, 0, 0.7)), url(./eduford_img/background.jpg);
+    size-adjust: 35%;
+}
+.icons ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-size:55px;
+}
+
+/* footer section end */
