@@ -3,7 +3,7 @@
 "Eduford University is a comprehensive web application designed to provide students with an interactive platform to manage their academic journey. Built using HTML, CSS, JavaScript for the front-end, and Node.js for the back-end, this application enables students to enroll in courses, view their course schedule, and track their academic progress seamlessly."
 
 
-## Features
+## ✨ Features
 
 - User authentication:  Students can sign up and log in to their accounts.
 - Course enrollment:  Students can browse available courses and enroll in them.
