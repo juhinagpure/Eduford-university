@@ -9,6 +9,37 @@ Eduford University is a simple web application that allows students to enroll in
 - Course schedule:  Students can view their course schedule and upcoming assignments.
 - Academic progress:  Students can track their grades and overall academic performance.
 
+# Technology Stack
+
+The Eduford University project utilizes the following technologies:
+
+## Front-end
+- **HTML**: Structures the web pages.
+- **CSS**: Styles and layouts the web pages.
+- **JavaScript**: Adds dynamic content and interactivity.
+- **Bootstrap**: Ensures a responsive and mobile-friendly UI design.
+
+## Back-end
+- **Node.js**: Executes JavaScript on the server.
+- **Express.js**: Manages server-side routing and middleware.
+
+## Database
+- **MongoDB**: Stores and manages application data.
+
+## Deployment and Infrastructure
+- **Git**: Manages version control.
+- **GitHub**: Hosts the repository for collaborative development.
+- **Heroku**: Deploys and hosts the application online.
+
+## Testing
+- **Jest**: Conducts unit testing for JavaScript code.
+- **Supertest**: Tests HTTP endpoints to ensure API functionality.
+
+## Tools
+- **Visual Studio Code**: Provides a powerful code editing environment.
+- **Postman**: Facilitates API testing and development.
+
+
 ## # Eduford University Installation and Setup Guide
 
 This comprehensive guide outlines the step-by-step process for installing and setting up Eduford University locally on different operating systems: Windows, macOS, and Linux.
@@ -154,38 +185,7 @@ Before you begin, ensure you have the following installed on your machine:
 
 You have successfully installed and set up Eduford University locally on your machine. If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/juhinagpure/Eduford-university/issues).
 
-Enjoy exploring and contributing to Eduford University!
-   ```
 
-# Technology Stack
-
-The Eduford University project utilizes the following technologies:
-
-## Front-end
-- **HTML**: Structures the web pages.
-- **CSS**: Styles and layouts the web pages.
-- **JavaScript**: Adds dynamic content and interactivity.
-- **Bootstrap**: Ensures a responsive and mobile-friendly UI design.
-
-## Back-end
-- **Node.js**: Executes JavaScript on the server.
-- **Express.js**: Manages server-side routing and middleware.
-
-## Database
-- **MongoDB**: Stores and manages application data.
-
-## Deployment and Infrastructure
-- **Git**: Manages version control.
-- **GitHub**: Hosts the repository for collaborative development.
-- **Heroku**: Deploys and hosts the application online.
-
-## Testing
-- **Jest**: Conducts unit testing for JavaScript code.
-- **Supertest**: Tests HTTP endpoints to ensure API functionality.
-
-## Tools
-- **Visual Studio Code**: Provides a powerful code editing environment.
-- **Postman**: Facilitates API testing and development.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss proposed modifications.
