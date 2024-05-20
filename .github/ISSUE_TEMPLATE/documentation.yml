@@ -1,0 +1,39 @@
+name: "📚 Documentation"
+description: Report an issue in the project's documentation or README.md file.
+title: "📚 [Documentation] - Title"
+labels: [
+  "documentation",
+  "no code"
+]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        📚 **Document Request / Updation**
+
+        Thanks for taking the time to fill out this documentation deficiency report! :memo:
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description ✍️"
+      description: Enter a brief description about the deficit documentation that you want to add.
+      placeholder: Please include a summary, also include any relevant links.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Add ScreenShots"
+      description: "Add sufficient SS to explain your issue."
+    validations:
+      required: false
+
+
+  - type: checkboxes
+    attributes:
+      label: "Record"
+      options:
+        - label: "I agree to follow this project's :link: [Contributing Guidlines](https://github.com/juhinagpure/Eduford-university/blob/master/Contributors.md)"
+          required: true
+        - label: "I'm a GSSOC'24 contributor"
+        - label: "I want to work on this issue"
