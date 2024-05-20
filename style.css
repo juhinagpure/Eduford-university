@@ -29,7 +29,7 @@ nav {
   text-align: center;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  position: sticky;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
 }
 
@@ -40,6 +40,7 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
+    padding-right: 254px;
 }
 
 .nav-links ul li {
@@ -110,7 +111,7 @@ nav img {
 }
 .hero-btn:hover {
   color: white;
-  box-shadow: inset 0 -100px 0 0 #725AC1;
+  box-shadow: inset 0 -100px 0 0 #dd290a;
 }
 
 .hero-btn:active {
@@ -175,7 +176,7 @@ h1 {
 }
 
 p {
-    color: #777;
+    color: rgb(22 21 21);
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -183,10 +184,7 @@ p {
 }
 
 .row {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    justify-content: space-between;
-    
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -284,15 +282,19 @@ h3 {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
 }
 
 .facilities-col {
     flex: 1 1 300px;
     background-color: transparent;
     margin: 30px;
-    height: 300px;
+    height: 490px;
     perspective: 1000px;
+}
+
+.facilities-col img{
+    height: 275px;
+    width: 345px;
 }
 
 .facilities-col-inner{
@@ -464,7 +466,7 @@ h3 {
 
 /* About us page */
 .sub-header {
-    height: 50vh;
+    height: 65vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/background.jpg);
     background-position: center;
@@ -678,9 +680,24 @@ h3 {
     transition:transform 2.5s;
     transition-delay:0.275s;
     transition-duration: 3s;
-    
   }
   .icons ul li i:before{
     transition:.5s;
     top:0;
+}
+
+.icons{
+   display: flex;
+   justify-content: center;
+    }
+  
+
+.icons a:nth-child(2):hover{
+    color: #55acee;
+    padding: 22px;
   }
+
+  .icons a:nth-child(3):hover{
+    color: #92096d;
+  }
+ 
