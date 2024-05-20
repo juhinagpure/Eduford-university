@@ -21,8 +21,26 @@ body{
   position: relative;
   background-position: center;
 }
-
+/*This comment notes that the errors in Nav, Typos, Testimonials, and Footer were fixed by https://github.com/Mahimatestgithub */
 nav {
+    display: flex;
+    width: 100%;
+    padding: 2% 6%;
+    text-align: center;
+    justify-content: space-between; /* Fix alignment issue */
+    align-items: center;
+
+    /* Nav, Typos, Testimonials, Footer #126 fixed by https://github.com/Mahimatestgithub*/
+    /*position: fixed; /* Fix position */
+
+
+    top: 0; /* Ensure it stays at the top */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+
+/*nav {
   display: flex;
   width: 100%;
   padding: 2% 6%;
@@ -31,7 +49,7 @@ nav {
   align-items: center;
   position: fixed;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
-}
+}*/
 
 nav img {
     width: 150px;
@@ -133,6 +151,15 @@ nav .fa-xmark {
     .nav-links ul li {
         display: block;
     }
+    /*added by mahimatestgithub/*/
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
 
     .nav-links {
         position: fixed;
@@ -181,6 +208,7 @@ p {
     line-height: 22px;
     padding: 10px;
 }
+
 
 .row {
     margin-top: 10%;
@@ -500,7 +528,9 @@ h3 {
 
 /* About us page */
 .sub-header {
-    height: 50vh;
+   /* solved by https://github.com/Mahimatestgithub*/
+    height: 125vh;
+   /* height: 50vh;*/
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/background.jpg);
     background-position: center;
