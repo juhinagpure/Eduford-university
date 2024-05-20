@@ -404,6 +404,9 @@ h3 {
     display: flex;
     box-sizing: border-box;
     align-items: center;
+     /*   height , max-width were added by https://github.com/Mahimatestgithub*/ */
+    height: 200px; /* Fixed height */
+    max-width: 600px; /* Max width to maintain consistency */
 }
 
 .testimonials-col img {
