@@ -346,6 +346,8 @@ h3 {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    box-sizing: border-box;
+    padding: 35px; /* Added padding here ,fixed by https://github.com/Mahimatestgithub*/*/
 }
 
 .facilities-col-front img {
