@@ -150,7 +150,7 @@ Before you begin, ensure you have the following installed on your machine:
    sudo npm install
    ```
 
-## Conclusion
+## Congratulations
 
 You have successfully installed and set up Eduford University locally on your machine. If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/juhinagpure/Eduford-university/issues).
 
@@ -162,18 +162,32 @@ Enjoy exploring and contributing to Eduford University!
 The Eduford University project utilizes the following technologies:
 
 ## Front-end
-- **HTML**, **CSS**, and **JavaScript** for building the user interface and adding interactivity.
-- **Bootstrap** for responsive and mobile-friendly UI design.
+- **HTML**: Structures the web pages.
+- **CSS**: Styles and layouts the web pages.
+- **JavaScript**: Adds dynamic content and interactivity.
+- **Bootstrap**: Ensures a responsive and mobile-friendly UI design.
 
 ## Back-end
-- **Node.js** and **Express.js** for the server-side application development.
+- **Node.js**: Executes JavaScript on the server.
+- **Express.js**: Manages server-side routing and middleware.
 
+## Database
+- **MongoDB**: Stores and manages application data.
 
 ## Deployment and Infrastructure
-- **Git** and **GitHub** for version control and collaborative development.
+- **Git**: Manages version control.
+- **GitHub**: Hosts the repository for collaborative development.
+- **Heroku**: Deploys and hosts the application online.
 
+## Testing
+- **Jest**: Conducts unit testing for JavaScript code.
+- **Supertest**: Tests HTTP endpoints to ensure API functionality.
+
+## Tools
+- **Visual Studio Code**: Provides a powerful code editing environment.
+- **Postman**: Facilitates API testing and development.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss proposed modifications.
 
 ![Smart saver Infographic](https://camo.githubusercontent.com/dd5e3080a7adc2ead8f86cbbd6577cee0a38439c0ebf195021ce41587b0a405f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a633459675258595161794f5657785633376f757272772e706e67)
