@@ -187,7 +187,11 @@ You have successfully installed and set up Eduford University locally on your ma
 
 
 
-## Contributing
+## Contributing 💝
 Pull requests are welcome. For major changes, please open an issue first to discuss proposed modifications.
+
+Message from PA
+Thank you for visiting Eduford University! 💝
+Feel free to explore the code, contribute, and provide feedback.
 
 ![Smart saver Infographic](https://camo.githubusercontent.com/dd5e3080a7adc2ead8f86cbbd6577cee0a38439c0ebf195021ce41587b0a405f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a633459675258595161794f5657785633376f757272772e706e67)
