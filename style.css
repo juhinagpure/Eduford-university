@@ -21,8 +21,26 @@ body{
   position: relative;
   background-position: center;
 }
-
+/*This comment notes that the errors in Nav, Typos, Testimonials, and Footer were fixed by https://github.com/Mahimatestgithub */
 nav {
+    display: flex;
+    width: 100%;
+    padding: 2% 6%;
+    text-align: center;
+    justify-content: space-between; /* Fix alignment issue */
+    align-items: center;
+
+    /* Nav, Typos, Testimonials, Footer #126 fixed by https://github.com/Mahimatestgithub*/
+    /*position: fixed; /* Fix position */
+
+
+    top: 0; /* Ensure it stays at the top */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+
+/*nav {
   display: flex;
   width: 100%;
   padding: 2% 6%;
@@ -31,7 +49,7 @@ nav {
   align-items: center;
   position: fixed;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
-}
+}*/
 
 nav img {
     width: 150px;
@@ -133,6 +151,15 @@ nav .fa-xmark {
     .nav-links ul li {
         display: block;
     }
+    /*added by mahimatestgithub/*/
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
 
     .nav-links {
         position: fixed;
@@ -181,6 +208,7 @@ p {
     line-height: 22px;
     padding: 10px;
 }
+
 
 .row {
     margin-top: 10%;
@@ -318,6 +346,8 @@ h3 {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    box-sizing: border-box;
+    padding: 35px; /* Added padding here ,fixed by https://github.com/Mahimatestgithub*/*/
 }
 
 .facilities-col-front img {
@@ -374,6 +404,9 @@ h3 {
     display: flex;
     box-sizing: border-box;
     align-items: center;
+     /*   height , max-width were added by https://github.com/Mahimatestgithub*/ */
+    height: 200px; /* Fixed height */
+    max-width: 600px; /* Max width to maintain consistency */
 }
 
 .testimonials-col img {
@@ -438,33 +471,71 @@ h3 {
     }
 }
 
-/* footer */
+/* Footer */
 .footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.footer h1 {
-    margin-bottom: 25px;
-    margin-top: 20px;
+.footer h4 {
+    margin-bottom: 20px;
     font-weight: 600;
+    font-size: 24px;
+    color: rgb(64, 14, 230)
 }
 
-.icons .fa-solid fa-star {
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
+.footer p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-.fa-heart-o {
+.footer .icons {
+    margin-top: 20px;
+}
+
+.footer .icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .icons ul li {
+    margin: 0 10px;
+}
+
+.footer .icons ul li a {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .icons ul li a:hover {
     color: #f44336;
 }
+
+@media (max-width: 768px) {
+    .footer p {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .footer .icons ul li {
+        margin: 0 5px;
+    }
+}
+
 
 /* About us page */
 .sub-header {
-    height: 50vh;
+   /* solved by https://github.com/Mahimatestgithub*/
+    height: 125vh;
+   /* height: 50vh;*/
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/background.jpg);
     background-position: center;
@@ -604,6 +675,10 @@ h3 {
 .contact-col {
     flex-basis: 48%;
     margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-col div {
@@ -630,15 +705,70 @@ h3 {
     font-weight: 400;
 }
 
-
+.contact-col input[type="text"],
+.contact-col input[type="email"],
+.contact-col input[type="subject"],
 .contact-col textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 17px;
-    outline: none;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
 }
+
+.contact-col input[type="text"]:focus,
+.contact-col input[type="email"]:focus,
+.contact-col input[type="subject"]:focus,
+.contact-col textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-col .hero-btn.red-btn {
+    padding: 12px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-col .hero-btn.red-btn:hover {
+    background-color: #c0392b;
+}
+
+.contact-col textarea {
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .contact-col {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+    .contact-col div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-col div .fa {
+        margin-right: 10px;
+    }
+
+    .contact-col .hero-btn.red-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 .go-top-btn {
     position: fixed;
