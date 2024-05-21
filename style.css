@@ -606,6 +606,37 @@ h3 {
     margin-bottom: 30px;
 }
 
+.contact-col .input1 {
+    width: 34%;
+    padding: 15px;
+    margin-bottom: 18px;
+    margin-left: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-col .input2 {
+    width: 34%;
+    padding: 15px;
+    margin-bottom: 18px;
+    margin-left: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-col .input3 {
+    width: 34%;
+    padding: 15px;
+    margin-bottom: 18px;
+    margin-left: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
 .contact-col div {
     display: flex;
     align-items: center;
