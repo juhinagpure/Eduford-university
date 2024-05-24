@@ -185,8 +185,6 @@ p {
 .row {
     margin-top: 10%;
     margin-bottom: 10%;
-    justify-content: space-between;
-    
     display: flex;
     justify-content: space-between;
 }
@@ -355,7 +353,7 @@ h3 {
     color: #fff3f3;
 }
 
-/* testimonials */
+/* Testimonials */
 .testimonials {
     width: 80%;
     margin: auto;
@@ -364,29 +362,51 @@ h3 {
 }
 
 .testimonials-col {
+    text-align: left;
     flex-basis: 44%;
     border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
+    margin: 5% 2.5%;
     background: #fff3f3;
     padding: 25px;
-    cursor: pointer;
-    display: flex;
     box-sizing: border-box;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.testimonials-col img {
-    width: 80px; /* Set a specific width for the images */
-    height: 80px; /* Set a specific height for the images */
-    border-radius: 50%; /* Make images circular */
-    margin-right: 20px; /* Space between image and text */
-    object-fit: cover; /* Ensure the image covers the element */
+.testimonials-col-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 15px; 
 }
 
-.testimonials-col p {
+.testimonials-col-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials-col-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-col img {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    margin-right: 20px; 
+    object-fit: cover;
+}
+
+.testimonials p {
     padding: 0;
     margin: 0; /* Add margin to avoid overflow */
+    text-align: start;
 }
 
 .testimonials-col h3 {
@@ -403,6 +423,20 @@ h3 {
 }
 
 @media (max-width: 700px) {
+    .testimonials .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-col {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    .testimonials-col-img {
+        height: auto;
+    }
+
     .testimonials-col {
         flex-direction: column;
         align-items: flex-start;
@@ -412,6 +446,7 @@ h3 {
         margin: 0 0 15px 0;
     }
 }
+
 
 
 /* call to action */
