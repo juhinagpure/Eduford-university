@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./eduford_img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
         rel="stylesheet">
@@ -21,44 +21,46 @@
 
 <body>
     <section class="header">
-        <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
+        <nav><a href="index.html"><img src="./eduford_img/logo.png" alt="" data-aos="fade-right"></a>
             <div class="nav-links" id=" navLinks">
                 <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li class="active-nav"><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="active-nav" data-aos="fade-left"><a href="index.html">HOME</a></li>
+                    <li data-aos="fade-left" data-aos-delay="50"><a href="about.html">ABOUT</a></li>
+                    <li data-aos="fade-left" data-aos-delay="100"><a href="contact.html">COURSE</a></li>
+                    <li data-aos="fade-left" data-aos-delay="150"><a href="blog.html">BLOG</a></li>
+                    <li data-aos="fade-left" data-aos-delay="200"><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div><i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>World's Biggest University</h1>
-            <p>Education is essential in today's world. Explore the latest advancements and upcoming languages at our
+            <h1 data-aos="zoom-in">World's Biggest University</h1>
+            <p data-aos="zoom-in">Education is essential in today's world. Explore the latest advancements and upcoming
+                languages at our
                 university. Dive into programming and much more.
 
-            </p><a href="contact.html" class="hero-btn">Visit Us To Know More</a>
+            </p><a href="contact.html" class="hero-btn" data-aos="fade-up" data-aos-delay="300">Visit Us To Know
+                More</a>
         </div>
     </section>
     <!-- Course  -->
     <section class="course">
-        <h1>Courses We Offer</h1>
-        <p>This is the main classes we provide at our university </p>
-        <div class="row">
-            <div class="course-col car">
+        <h1 data-aos="fade-up">Courses We Offer</h1>
+        <p data-aos="fade-up">This is the main classes we provide at our university </p>
+        <div class="row" data-aos="fade-up">
+            <div class="course-col car" data-aos="fade-right" data-aos-delay="100">
                 <h3>Computer science</h3>
                 <p>This class typically covers fundamental concepts in computer science such as algorithms, data
                     structures, programming languages, and software engineering principles. Students may learn
                     programming and gain skills in problem-solving and logical thinking.</p>
             </div>
-            <div class="course-col car">
+            <div class="course-col car" data-aos="fade-up" data-aos-delay="200">
                 <h3>Principles of Economics:</h3>
                 <p>This class introduces students to basic economic principles such as supply and market structures, and
                     theories of consumer behavior. It provides a foundation for understanding economic systems and
                     decision-making at both individual and societal levels.</p>
             </div>
-            <div class="course-col car">
+            <div class="course-col car" data-aos="fade-left" data-aos-delay="300">
                 <h3>Introduction to Psychology</h3>
                 <p>This class explores the fundamentals of psychology including topics such as human development and
                     mental health. Students may learn about different theoretical perspectives in psychology and how
@@ -68,20 +70,20 @@
     </section>
     <!-- campus  -->
     <section class="campus">
-        <h1>Our Global Campus</h1>
-        <p>Empowering communities locally and globally through our diverse range of campaigns. </p>
+        <h1 data-aos="fade-up">Our Global Campus</h1>
+        <p data-aos="fade-up">Empowering communities locally and globally through our diverse range of campaigns. </p>
         <div class="row">
-            <div class="campus-col"><img src="./eduford_img/london.png">
+            <div class="campus-col" data-aos="fade-up" data-aos-delay="100"><img src="./eduford_img/london.png">
                 <div class="layer">
                     <h3>LONDON</h3>
                 </div>
             </div>
-            <div class="campus-col"><img src="./eduford_img/newyork.png">
+            <div class="campus-col" data-aos="fade-up" data-aos-delay="200"><img src="./eduford_img/newyork.png">
                 <div class="layer">
                     <h3>NEW YORK</h3>
                 </div>
             </div>
-            <div class="campus-col"><img src="./eduford_img/washington.png">
+            <div class="campus-col" data-aos="fade-up" data-aos-delay="400"><img src="./eduford_img/washington.png">
                 <div class="layer">
                     <h3>WASHINGTON</h3>
                 </div>
@@ -92,13 +94,13 @@
     <!-- facilities -->
 
     <section class="facilities">
-        <h1>Our facilities</h1>
-        <p>Our university boasts state-of-the-art facilities equipped with cutting-edge technology
+        <h1 data-aos="fade-up">Our facilities</h1>
+        <p data-aos="fade-up">Our university boasts state-of-the-art facilities equipped with cutting-edge technology
 
         </p>
         <div class="row">
 
-            <div class="facilities-col">
+            <div class="facilities-col" data-aos="fade-up" data-aos-delay="200">
                 <div class="facilities-col-inner">
                     <div class="facilities-col-front">
                         <img src="./eduford_img/library.png" alt="">
@@ -113,7 +115,7 @@
             </div>
 
 
-            <div class="facilities-col">
+            <div class="facilities-col" data-aos="fade-up" data-aos-delay="400">
                 <div class="facilities-col-inner">
                     <div class="facilities-col-front">
                         <img src="./eduford_img/basketball.png" alt="">
@@ -127,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="facilities-col">
+            <div class="facilities-col" data-aos="fade-up" data-aos-delay="600">
                 <div class="facilities-col-inner">
                     <div class="facilities-col-front">
                         <img src="./eduford_img/cafeteria.png" alt="">
@@ -145,13 +147,13 @@
 
     <!-- testmonials -->
     <section class="testimonials">
-        <h1>What Our Students Says</h1>
-        <p>We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability
+        <h1 data-aos="fade-up">What Our Students Says</h1>
+        <p data-aos="fade-up">We commit to meet the financial need of every admitted undergraduate student. We don’t consider your ability
             to pay when we review your application, and we don’t base our decision on whether you can cover the cost. If
             you’re accepted here, you belong here.</p>
 
         <div class="row">
-            <div class="testimonials-col car">
+            <div class="testimonials-col car" data-aos="fade-right" data-aos-delay="300">
                 <img src="./eduford_img/user1.jpg" alt="">
                 <div>
                     <p>“Eduford is home to me not because of the fancy buildings like Healy Hall, or its prestigious
@@ -166,7 +168,7 @@
                 </div>
             </div>
 
-            <div class="testimonials-col car">
+            <div class="testimonials-col car" data-aos="fade-left" data-aos-delay="300">
                 <img src="./eduford_img/user2.jpg" alt="">
                 <div>
                     <p>
@@ -185,32 +187,31 @@
     </section>
 
     <!-- call the action -->
-    <section class="cta">
-        <h1>Enroll for Our Various Online Courses <br>Anywhere From The World</h1>
-        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    <section class="cta" data-aos="fade-up">
+        <h1 data-aos="fade-up">Enroll for Our Various Online Courses <br>Anywhere From The World</h1>
+        <a href="contact.html" class="hero-btn" data-aos="fade-up" data-aos-delay="300">CONTACT US</a>
     </section>
 
     <!-- Footer -->
     <section class="footer">
-        <h4>About Us</h4>
-        <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
+        <h4 data-aos="fade-up">About Us</h4>
+        <p data-aos="fade-up">Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
             diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
         <div class="icons">
             <ul>
                 <li>
-                    <a style="color: blue;" href="https://www.facebook.com/" ><i
-                        class="fa-brands fa-facebook"></i></a>
+                    <a style="color: blue;" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a style=" color: #1DA1F2;" href="https://twitter.com/" ><i class="fa-brands fa-twitter"></i></a>
+                    <a style=" color: #1DA1F2;" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a style="color: #C13584;" href="https://www.instagram.com/" ><i
-                        class="fa-brands fa-instagram"></i></a>
+                    <a style="color: #C13584;" href="https://www.instagram.com/"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a style=" color: #0077B5;" href="https://www.linkedin.com/" ><i
-                        class="fa-brands fa-linkedin"></i></a>
+                    <a style=" color: #0077B5;" href="https://www.linkedin.com/"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </li>
             </ul>
             <!-- <a style="color: blue;" href="https://www.facebook.com/" ><i
@@ -266,6 +267,14 @@
         requestAnimationFrame(raf);
 
 
+    </script>
+    <script src="https://kit.fontawesome.com/628003722a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1100
+        });
     </script>
 </body>
 
