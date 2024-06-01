@@ -2,35 +2,33 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
-   
-  
-}
-body{
-    overflow-x: hidden;
-    
+    box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 .header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./eduford_img/banner.png);
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./eduford_img/banner.png);
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 nav {
-  display: flex;
-  width: 100%;
-  padding: 2% 6%;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    display: flex;
+    width: 100%;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 9, 30, 0.7);
+    z-index: 1000;
 }
 
 nav img {
@@ -42,11 +40,14 @@ nav img {
     text-align: right;
 }
 
-.nav-links ul li {
+.nav-links ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links ul li {
     padding: 8px 12px;
-    position: relative;
 }
 
 .nav-links ul li a {
@@ -69,10 +70,6 @@ nav img {
     width: 100%;
 }
 
-.nav-links ul li:clicked {
-    text-decoration: underline;
-}
-
 .text-box {
     width: 90%;
     color: #fff;
@@ -90,7 +87,6 @@ nav img {
 .text-box p {
     margin: 10px 0 40px;
     font-size: 14px;
-    color: #fff;
 }
 
 .hero-btn {
@@ -101,9 +97,10 @@ nav img {
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
-    position: relative;
     cursor: pointer;
+    transition: 1s;
 }
+
 
 .hero-btn:hover {
     transition: 1s;
@@ -684,3 +681,5 @@ h3 {
     transition:.5s;
     top:0;
   }
+
+  
