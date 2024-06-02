@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c5182e007e.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <title>EDUFORD UNIVERSITY WEBSITE</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav><a href="index.html"><img src="./eduford_img/logo.png" alt=""></a>
+            <div class="nav-links id=" navLinks">
+                <i class="fa fa-time" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="login.html">LOGIN/SIGNUP</li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div><i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <br>
+        <h1 class="change">SIGNUP TO THE WEBSITE</h1>
+    </section>
+    <!-- SIGN UP -->
+    <h1>Sign Up</h1>
+    <form action="signup.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Welcome to our university, where academic excellence meets vibrant campus life. Join our <br>
+            diverse community of learners and discover endless opportunities for growth, innovation, and success.</p>
+        <div class="icons">
+        <a style="padding: 10px;" href=""> <i class="fa-brands fa-square-facebook"></i></a> 
+        <a style="padding: 10px;" href=""><i class="fa-brands fa-square-twitter"></i></a> 
+        <a style="padding: 10px;" href=""><i class="fa-brands fa-square-instagram"></i></a>  
+        <a style="padding: 10px;" href=""> <i class="fa-brands fa-linkedin"></i></a> 
+        </div>
+        <p>made with <i class="fa-regular fa-heart"></i> By Juhi
+        </p>
+    </section>
+
+    <!-- javascript for toggle menu
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function showMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script> -->
+    
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+            direction: "vertical",
+            gestureDirection: "vertical",
+            smooth: true,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+
+    </script>
+</body>
+
+</html>
