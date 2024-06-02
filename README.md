@@ -1,69 +1,50 @@
-# Welcome to Eduford University!
+# Eduford University
 
-Welcome to Eduford University, your all-in-one solution for managing academic pursuits with ease and efficiency. Eduford University is not just a web application; it's a digital campus designed to enhance the educational experience for both students and educators. From seamless course enrollment to intuitive academic progress tracking, Eduford University aims to redefine the way we engage with education in the digital age.
+Eduford University is a simple web application that allows students to enroll in courses, view their course schedule, and track their academic progress. This project is built using HTML, CSS, and JavaScript for the front-end, and Node.js for the back-end.
 
 ## Features
 
-### User Authentication
-
-At Eduford University, security is our top priority. Our robust user authentication system ensures that only authorized individuals have access to their accounts. Students can sign up securely with their email addresses, create strong passwords, and log in to their personalized dashboards. Forgot your password? No problem! Our password reset feature makes it easy to regain access to your account.
-
-### Course Enrollment
-
-Say goodbye to long lines and paperwork during course registration. With Eduford University, students can explore a vast catalog of courses from various disciplines, filter by subject, semester, or instructor, and enroll in their desired classes with just a few clicks. The intuitive interface provides detailed course descriptions, prerequisites, and available sections, empowering students to make informed decisions about their academic journey.
-
-### Course Schedule
-
-Keeping track of classes, assignments, and deadlines has never been easier. Eduford University's course scheduling feature allows students to view their weekly schedules at a glance, complete with class timings, locations, and upcoming assignments. The interactive calendar lets students customize their schedules, set reminders for important dates, and sync events with external calendar apps for maximum convenience.
-
-### Academic Progress
-
-Track your academic journey with precision using Eduford University's comprehensive progress tracking tools. From grades and GPA calculations to overall academic performance metrics, students can monitor their progress in real-time. Visualizations and analytics provide insights into strengths and areas for improvement, enabling students to make informed decisions about their education. Our progress tracking feature also allows students to set academic goals, track their achievements, and celebrate milestones along the way.
+- User authentication:  Students can sign up and log in to their accounts.
+- Course enrollment:  Students can browse available courses and enroll in them.
+- Course schedule:  Students can view their course schedule and upcoming assignments.
+- Academic progress:  Students can track their grades and overall academic performance.
 
 ## Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/juhinagpure/Eduford-university.git
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the server:
+   ```
+   npm start
+   ```
+4. Open the application in your browser:
+   ```
+   http://localhost:3000
+   ```
 
-Excited to experience Eduford University firsthand? Follow these simple steps to set up the application on your local machine:
+# Technology Stack
 
-1. **Clone the Repository**:
-git clone https://github.com/juhinagpure/Eduford-university.git
+The Eduford University project utilizes the following technologies:
 
-2. **Install Dependencies**:
-npm install
+## Front-end
+- **HTML**, **CSS**, and **JavaScript** for building the user interface and adding interactivity.
+- **Bootstrap** for responsive and mobile-friendly UI design.
 
-4. **Start the Server**:
-npm start
+## Back-end
+- **Node.js** and **Express.js** for the server-side application development.
 
-
-4. **Open in Your Browser**:
-Visit [http://localhost:3000](http://localhost:3000) to access Eduford University and start exploring its features.
-
-## Technology Stack
-
-Eduford University utilizes a modern and robust technology stack to deliver a seamless user experience:
-
-### Front-end
-
-- **HTML, CSS, and JavaScript**: The building blocks of the user interface, providing structure, styling, and interactivity.
-- **Bootstrap**: A popular front-end framework for creating responsive and mobile-friendly designs, ensuring a consistent user experience across devices.
-
-### Back-end
-
-- **Node.js and Express.js**: Power the server-side development, handling requests, managing data, and ensuring smooth communication between the client and server.
 
 ## Deployment and Infrastructure
+- **Git** and **GitHub** for version control and collaborative development.
 
-Eduford University's deployment and infrastructure are managed with industry-standard tools and best practices:
-
-- **Git and GitHub**: Version control and collaborative development enable multiple contributors to work on the project simultaneously, ensuring code integrity and facilitating seamless integration of new features and enhancements.
 
 ## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+This is how you can start contributing - <a href="/Contributors.md">
 
-Eduford University is a community-driven project, and we welcome contributions from developers, designers, and educators alike. Whether you're interested in fixing bugs, adding new features, improving documentation, or providing feedback, your contributions are invaluable.
-
-To contribute to Eduford University:
-
-1. **Open an Issue**: If you encounter a bug or have a feature request, open an issue on GitHub to start a discussion and share your ideas.
-2. **Submit a Pull Request**: Fork the repository, make your changes, and submit a pull request. Be sure to follow the contribution guidelines and provide clear descriptions of your changes.
-
-Together, let's make Eduford University the ultimate destination for students and educators alike!
-
+![Smart saver Infographic](https://camo.githubusercontent.com/dd5e3080a7adc2ead8f86cbbd6577cee0a38439c0ebf195021ce41587b0a405f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a633459675258595161794f5657785633376f757272772e706e67)

@@ -7,29 +7,31 @@
   
 }
 body{
-    overflow-x: hidden;
+    overflow-x:hidden;
     
 }
-
-
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./eduford_img/banner.png);
-  background-size: cover;
-  position: relative;
-  background-position: center;
+.change {
+    color : white;
+    text-align:center;
 }
+    .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(./eduford_img/banner.png);
+    background-size: cover;
+    position:relative;
+    background-position: center;
+    }
 
 nav {
   display: flex;
   width: 100%;
   padding: 2% 6%;
   text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
+  justify-content:space-between ;
+  align-items: self-end;
+  position:relative;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
 }
 
@@ -39,20 +41,26 @@ nav img {
 
 .nav-links {
     flex: 1;
-    text-align: right;
+    text-align: end;
 }
-
+.nav-links ul {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
 .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+    list-style:none;
+    display:inline-block ;
+    padding: 4px 12px;
+    position:relative;
+    margin-right: 80px;
 }
 
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
+    position: relative;
+    padding: 10px;
 }
 
 .nav-links ul li::after {
@@ -60,9 +68,10 @@ nav img {
     width: 0%;
     height: 2px;
     background: #f44336;
-    display: block;
-    margin: auto;
+    display: inline-block;
     transition: 0.5s;
+    position: relative;
+    
 }
 
 .nav-links ul li:hover::after {
@@ -182,14 +191,14 @@ p {
     padding: 10px;
 }
 
-.row {
+/* .row {
     margin-top: 10%;
     margin-bottom: 10%;
     justify-content: space-between;
     
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .course-col {
     z-index: -1;
@@ -293,6 +302,7 @@ h3 {
     margin: 30px;
     height: 300px;
     perspective: 1000px;
+    
 }
 
 .facilities-col-inner{
@@ -684,3 +694,35 @@ h3 {
     transition:.5s;
     top:0;
   }
+
+  .row {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Distribute items evenly in the row */
+}
+
+/* Style for the image frames */
+.image-frame {
+    width: 300px; /* Set the width of the frame */
+    border: 1px solid #ccc; /* Add a border around the frame */
+    overflow: hidden; /* Hide any overflow from images */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add some space between frames */
+}
+
+/* Style for the images */
+.image-frame img {
+    width: 100%; /* Make the images fill the width of the frame */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-frame h3 {
+    margin: 10px 0; /* Add some margin below the heading */
+}
+
+.image-frame p {
+    margin: 0; /* Reset margin for paragraphs */
+}
+
+.new{
+    align-items: end;
+}
