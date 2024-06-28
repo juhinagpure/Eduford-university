@@ -10,6 +10,78 @@ body{
     overflow-x: hidden;
     
 }
+.theme-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 25px; 
+    right: 20%; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.toggle-circle i {
+    position: absolute;
+    font-size: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-circle i:last-child {
+    opacity: 1; 
+}
+
+.theme-toggle .fa-sun {
+    opacity: 0; 
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #111; 
+    color: #fff;
+}
+
+body.dark-mode .theme-toggle .fa-sun {
+    opacity: 1;
+}
+
+body.dark-mode .theme-toggle .fa-moon {
+    opacity: 1; 
+}
+
+body.dark-mode .course-col h3 {
+    color: #333333;
+}
+
+body.dark-mode .testimonials-col h3{
+    color: #333333;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #f9f9f9;
+    color: #333333; 
+}
+
+body.light-mode .theme-toggle .fa-sun {
+    opacity: 0; 
+}
+
+body.light-mode .theme-toggle .fa-moon {
+    opacity: 1;
+}
 
 
 .header {
@@ -40,6 +112,10 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
+    padding-right: 20px;
+}
+.nav-links ul {
+    margin: 0;
 }
 
 .nav-links ul li {

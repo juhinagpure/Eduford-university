@@ -32,6 +32,13 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div><i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <!-- Dark/Light Mode Toggle Button -->
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <div class="toggle-circle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -266,6 +273,31 @@
         requestAnimationFrame(raf);
 
 
+    </script>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-mode');
+        }
+    
+        // Initialize theme based on user preference or default to dark mode
+        (function() {
+            const prefersLightScheme = window.matchMedia('(prefers-color-scheme: light)').matches;
+            const storedTheme = localStorage.getItem('theme');
+            if (storedTheme === 'light') {
+                document.body.classList.add('light-mode');
+            } else if (storedTheme === 'dark' || !storedTheme && !prefersLightScheme) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.add('light-mode');
+            }
+        })();
+    
+        // Store theme preference
+        document.querySelector('.toggle-circle').addEventListener('click', () => {
+            const isLightMode = document.body.classList.contains('light-mode');
+            localStorage.setItem('theme', isLightMode ? 'dark' : 'light');
+        });
     </script>
 </body>
 
