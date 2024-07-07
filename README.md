@@ -14,15 +14,19 @@ Eduford University is a simple web application that allows students to enroll in
    ```
    git clone https://github.com/juhinagpure/Eduford-university.git
    ```
-2. Install dependencies:
+2. Initialize:
+   ```
+   npm init
+   ```
+3. Install dependencies:
    ```
    npm install
    ```
-3. Start the server:
+4. Start the server:
    ```
    npm start
    ```
-4. Open the application in your browser:
+5. Open the application in your browser:
    ```
    http://localhost:3000
    ```
