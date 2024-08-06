@@ -12,3 +12,86 @@
     transition: all 0.5s;
     background: #fff3f3;
 }
+
+.contact-col {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-col form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-col input[type="text"],
+.contact-col input[type="email"],
+.contact-col textarea {
+    width: 390%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.contact-col input[type="text"]:focus,
+.contact-col input[type="email"]:focus,
+.contact-col textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-col textarea {
+    resize: none;
+}
+
+.hero-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.hero-btn.red-btn {
+    background-color: #e74c3c;
+}
+
+.hero-btn.red-btn:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .contact-col {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-col input[type="text"],
+    .contact-col input[type="email"],
+    .contact-col textarea {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .hero-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
