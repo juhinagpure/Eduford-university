@@ -67,13 +67,15 @@
                 </span>
             </div>
 
-            <div class="contact-col">
-                <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter Your Name" required>
-                    <input type="email" name="email" placeholder="Enter email address" required>
-                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
-                    <textarea rows="8" name="message" placeholder="message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+            <div class="contact-col" style="display: flex; flex-direction: column; align-items: center; background-color: #ffffff; padding: 40px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); max-width: 700px; margin:50px auto; font-family: 'Arial', sans-serif;">
+                <h2 style="color: #333; margin-bottom: 20px;">Send Us Your Query></h2>
+                <form action="form-handler.php" method="post" style="width:100%; display:flex; flex-direction:column; gap:20px;">
+                    <input type="text" name="name" placeholder="Enter Your Name" required style ="padding:15px; border:1px solid #ddd; border-radius: 6px; width:700px; font-size: 16px;  ">
+                    <input type="email" name="email" placeholder="Enter email address" required style ="padding:15px; border:1px solid #ddd; border-radius: 6px; width:700px; font-size: 16px;">
+                    <input type="text" name="phone" placeholder="Enter Your Phone Number" required style="padding: 15px; border: 1px solid #ddd; border-radius: 6px; width: 105%; font-size: 16px; box-sizing: border-box;">
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required style="padding: 15px; border: 1px solid #ddd; border-radius: 6px; width: 100%; font-size: 16px;">
+                    <textarea rows="6" name="message" placeholder="Enter your message" required style="padding: 15px; border: 1px solid #ddd; border-radius: 6px; width: 100%;  resize:verticaal; height: 200px;"></textarea>
+                    <button type="submit" class="hero-btn red-btn"style="padding: 15px ; background-color: #ff4c4c; color: white; border: none; border-radius: 6px; font-size: 18px; cursor: pointer; transition:background-color 0.3s;">Send Message</button>
                 </form>
             </div>
 
